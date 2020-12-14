@@ -203,6 +203,8 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
                <h2 class = "bounceInDown wow"> <span> CRYPTO </span> SOLUTION </h2>
                 <p class = "bounceInDown wow"> <?= $site_name; ?>  offers you the most reliable and new investment system to choose not only for calculations, but also for the opportunity to get the most unusual profit. </p>
                 <div class = "planboxwrap">
+                                       
+                                       
                                         <div class = "planbox">
                         <div class = "planhead"> COINS STAR </div>
                         <div class = "planpercentage">
@@ -226,6 +228,33 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
                         </div>
                         <div class = "plancurve one"> &nbsp; </div>
                     </div>
+                                       
+                                       
+                                       
+                    <div class = "planbox">
+                        <div class = "planhead"> COINS ENTERPRISE </div>
+                        <div class = "planpercentage">
+                            <div class = "top">
+                                50 <span>% </span>
+                            </div>
+                            <div class = "bottom">
+                                Duration: 7 Days </div>
+                        </div>
+                        <div class="planinfos">
+                            <ul>
+                               <li> Capital: <span> Return </span> </li>
+                                <li> Minimum: <span> $ 1,000 </span> </li>
+                                <li> Maximum: <span> $ 49,999 </span> </li>
+                            </ul>
+                        </div>
+                        <div class = "planaction">
+                          
+                            <a href="login.php"> Invest </a>
+                                                      </div>
+                        <div class = "plancurve two"> &nbsp; </div>
+                    </div>
+                    
+                                 
                                         <div class = "planbox">
                         <div class = "planhead"> COINS ENTERPRISE </div>
                         <div class = "planpercentage">
@@ -248,6 +277,10 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
                                                       </div>
                         <div class = "plancurve two"> &nbsp; </div>
                     </div>
+                                      
+                                      
+                                      
+                                      
                                         <div class = "planbox">
                         <div class = "planhead"> COINS VIP </div>
                         <div class = "planpercentage">
@@ -291,7 +324,7 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
     <div class="graphcs2">
         <div class="calculatorwrap">
             <div class="content">
-                <div class="calculatorbox fadeInDown wow">
+                <!-- <div class="calculatorbox fadeInDown wow">
                     <div class="left">
                         <h4>Profit calculator</h4>
                     </div>
@@ -321,7 +354,7 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
                             <p> Profit: </p>
                             <h4 id="totals"></h4>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
