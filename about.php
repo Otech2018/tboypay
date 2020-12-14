@@ -7,18 +7,21 @@ function googleTranslateElementInit() {
 }
 </script>
 
-<script type="text/javascript" src="https://translate.google.com/translate_a/elementa0d8.html?cb=googleTranslateElementInit"></script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/elementa0d8.php?cb=googleTranslateElementInit"></script>
+
+<?php include('inc/settings.php'); ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from coinsway.co/about by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 14 Dec 2020 10:08:23 GMT -->
+<!-- Mirrored from <?= $site_name; ?> .co/about by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 14 Dec 2020 10:08:23 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>COINSWAY | About Page</title>
+    <title><?= $site_name; ?>  | About Page</title>
     <!--Favicon add-->
     <link rel="shortcut icon" type="image/png" href="assets/images/logo/icon.png">
     <!--bootstrap Css-->
@@ -68,19 +71,19 @@ function googleTranslateElementInit() {
         <div class="row">
             <div class="col-md-6">
                 <div class="contact-info">
-                    <a href="mailto:support@coinsway.co"> <i class="fa fa-envelope email" aria-hidden="true"></i> support@coinsway.co</a>
-                    <a href="#"> <i class="fa fa-phone" aria-hidden="true"></i> +1(305)203-6910 </a>
+                    <a href="<?= $site_email; ?> "> <i class="fa fa-envelope email" aria-hidden="true"></i> <?= $site_email; ?> </a>
+                    <a href="#"> <i class="fa fa-phone" aria-hidden="true"></i> <?= $site_phone; ?>  </a>
                 </div>
             </div>
             <div class="col-md-6 text-right bounceIn">
                 <div class="contact-admin">
-                    <a href="login.html"><i class="fa fa-user"></i> LOGIN </a>
-                    <a href="register.html"><i class="fa fa-user-plus"></i> REGISTER</a>
+                    <a href="login.php"><i class="fa fa-user"></i> LOGIN </a>
+                    <a href="register.php"><i class="fa fa-user-plus"></i> REGISTER</a>
                     <div class="support-bar-social-links">
-                                                    <a href="https://www.facebook.com/thesoftking"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                                    <a href="https://twitter.com/thesoftking"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                                    <a href="http://thesoftking.com/contact#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                                                    <a href="http://thesoftking.com/contact#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
                                                     <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                                             </div>
                 </div>
@@ -96,21 +99,21 @@ function googleTranslateElementInit() {
         <div class="row">
             <div class="col-md-3">
                 <div class="logo">
-                    <a href="index.html"><img src="assets/images/logo/logo.png" style="max-height:60px;"></a>
+                    <a href="index.php"><img src="assets/images/logo/logo.png" style="max-height:60px;"></a>
                 </div>
             </div>
             <div class="col-md-9 text-right">
                 <ul id="header-menu" class="header-navigation">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                                            <li><a href="menu/1/who-we-are.html">Who we are</a></li>
-                                        <li><a href="faqs.html">Faq</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="about.php">About Us</a></li>
+                                            
+                                        <li><a href="faqs.php">Faq</a></li>
+                    <li><a href="contact.php">Contact</a></li>
                                             <li><a class="page-scroll" href="#">Account <i class="fa fa-angle-down""></i></a>
                             <ul class="mega-menu mega-menu1 mega-menu2 menu-postion-4">
                                 <li class="mega-list mega-list1">
-                                    <a class="page-scroll" href="login.html">Login</a>
-                                    <a class="page-scroll" href="register.html">Register</a></li>
+                                    <a class="page-scroll" href="login.php">Login</a>
+                                    <a class="page-scroll" href="register.php">Register</a></li>
                             </ul>
                         </li>
                                     </ul>
@@ -143,8 +146,30 @@ function googleTranslateElementInit() {
     <section class="section-padding about-us-page">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <h2 style="font-family: DauphinPlain; line-height: 24px; color: rgb(0, 0, 0); margin-top: 0px; margin-right: 0px; margin-left: 0px; font-size: 24px; padding: 0px;">What is Lorem Ipsum?</h2><h2 style="font-family: DauphinPlain; line-height: 24px; color: rgb(0, 0, 0); margin-top: 0px; margin-right: 0px; margin-left: 0px; font-size: 24px; padding: 0px;"><p style="margin-bottom: 15px; font-family: &quot;Open Sans&quot;, sans-serif; font-size: 14px; padding: 0px; text-align: justify;"><span style="font-weight: 700; margin: 0px; padding: 0px;">Lorem Ipsum</span>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></h2><h2 style="font-family: DauphinPlain; line-height: 24px; color: rgb(0, 0, 0); margin-top: 0px; margin-right: 0px; margin-left: 0px; font-size: 24px; padding: 0px;">What is Lorem Ipsum?</h2><h2 style="font-family: DauphinPlain; line-height: 24px; color: rgb(0, 0, 0); margin-top: 0px; margin-right: 0px; margin-left: 0px; font-size: 24px; padding: 0px;"><p style="margin-bottom: 15px; font-family: &quot;Open Sans&quot;, sans-serif; font-size: 14px; padding: 0px; text-align: justify;"><span style="font-weight: 700; margin: 0px; padding: 0px;">Lorem Ipsum</span>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></h2><h2 style="font-family: DauphinPlain; line-height: 24px; color: rgb(0, 0, 0); margin-top: 0px; margin-right: 0px; margin-left: 0px; font-size: 24px; padding: 0px;">What is Lorem Ipsum?</h2><h2 style="font-family: DauphinPlain; line-height: 24px; color: rgb(0, 0, 0); margin-top: 0px; margin-right: 0px; margin-left: 0px; font-size: 24px; padding: 0px;"><p style="margin-bottom: 15px; font-family: &quot;Open Sans&quot;, sans-serif; font-size: 14px; padding: 0px; text-align: justify;"><span style="font-weight: 700; margin: 0px; padding: 0px;">Lorem Ipsum</span>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></h2><h2 style="font-family: DauphinPlain; line-height: 24px; color: rgb(0, 0, 0); margin-top: 0px; margin-right: 0px; margin-left: 0px; font-size: 24px; padding: 0px;">What is Lorem Ipsum?</h2><h2 style="font-family: DauphinPlain; line-height: 24px; color: rgb(0, 0, 0); margin-top: 0px; margin-right: 0px; margin-left: 0px; font-size: 24px; padding: 0px;"><p style="margin-bottom: 15px; font-family: &quot;Open Sans&quot;, sans-serif; font-size: 14px; padding: 0px; text-align: justify;"><span style="font-weight: 700; margin: 0px; padding: 0px;">Lorem Ipsum</span>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></h2><h2 style="font-family: DauphinPlain; line-height: 24px; color: rgb(0, 0, 0); margin-top: 0px; margin-right: 0px; margin-left: 0px; font-size: 24px; padding: 0px;">What is Lorem Ipsum?</h2><h2 style="font-family: DauphinPlain; line-height: 24px; color: rgb(0, 0, 0); margin-top: 0px; margin-right: 0px; margin-left: 0px; font-size: 24px; padding: 0px;"><p style="margin-bottom: 15px; font-family: &quot;Open Sans&quot;, sans-serif; font-size: 14px; padding: 0px; text-align: justify;"><span style="font-weight: 700; margin: 0px; padding: 0px;">Lorem Ipsum</span>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></h2>
+                <div class="col-md-12" style="font-szie:25px; font-weight:bold;">
+                <?= $site_name; ?> is a true opportunity to earn on cryptocurrency. 
+                Nowadays cryptocurrency is one of the main payment instruments,
+                 which can be used online. <?= $site_name; ?> has been using this kind 
+                 of digital payment for quite a while to gain and raise profit.
+
+                 <br/><br/>
+
+                 <?= $site_name; ?>, is an officially registered company which gives its clients 
+                 all required guarantees, including confidentiality of data provided by clients at
+                  the registration procedure. Apart from this we guarantee accrual of requested payments
+                   in due time and full amount. The company's system, including support service, works
+                    24 hours, which means you are always welcome to contact our experts in case you have 
+                    any questions.
+
+                 <br/><br/>
+
+
+                 <?= $site_name; ?>, provides its clients with an opportunity to invest money into mining
+                  farms located all around the world to obtain quite a big income later, which can be done 
+                  even without client's direct participation. The company actively uses trading bots on digital
+                   currency stock-markets, which is very convenient and profitable. We also try to attract new 
+                   partners and share our experience with the like-minded people all over the world.
+
                 </div>
             </div>
         </div>
@@ -167,23 +192,26 @@ function googleTranslateElementInit() {
                     <h2><span>PAYMENT METHOD </span> WE ACCEPT</h2>
                     <p><img src="assets/images/logo/icon.png" alt="icon"></p>
                 </div><!-- section-heading -->
-                <div class="section-wrapper">
-                    <div class="client-list">
-                        <!-- Swiper -->
-                        <div class="swiper-container client-container">
-                            <div class="swiper-wrapper">
-                                                                   <div class="swiper-slide"><div class="our-client wow rotateIn" data-wow-duration="2s"><a href="#"><img class="img-responsive" src="assets/images/1591631032h7.png" alt="client"></a></div></div>
-                                                            </div>
-                            <!-- Add Arrows -->
-                            <div class="swiper-button-next">
-                                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                            </div>
-                            <div class="swiper-button-prev">
-                                <i class="fa fa-angle-double-left" aria-hidden="true"></i>
-                            </div>
-                        </div><!-- client container -->
-                    </div><!-- client list-->
-                </div><!-- swiper wrapper -->
+                <div class="row">
+                    <div class="col-md-3">
+                    <img class="img-responsive" src="inc/btc.jpg" alt="client">
+                    </div>
+
+                    <div class="col-md-3">
+                    <img class="img-responsive" src="inc/eth.jpeg" alt="client">
+                    </div>
+
+
+                    <div class="col-md-3">
+                    <img class="img-responsive" src="inc/lit.png" alt="client">
+                    </div>
+
+
+                    <div class="col-md-3">
+                    <img class="img-responsive" src="inc/rip.jpeg" alt="client">
+                    </div>
+
+                </div>
             </div>
 
         </div><!-- row -->
@@ -207,7 +235,7 @@ function googleTranslateElementInit() {
                     <li class="wow bounceInDown" data-wow-duration="1s" data-wow-delay="2s">
                         <div class="footer-thumb"><i class="fa fa-envelope"></i></div>
                         <div class="footer-content">
-                            <p><a href="contact.html">support@coinsway.co</a></p>
+                            <p><a href="contact.php"><?= $site_email; ?> </a></p>
                         </div>
                     </li>
                     <li class="wow bounceInDown" data-wow-duration="1s" data-wow-delay="3s">
@@ -219,7 +247,7 @@ function googleTranslateElementInit() {
                     <li class="wow bounceInDown" data-wow-duration="1s" data-wow-delay="4s">
                         <div class="footer-thumb"><i class="fa fa-phone"></i></div>
                         <div class="footer-content">
-                            <p>+1(305)203-6910</p>
+                            <p><?= $site_phone; ?> </p>
                         </div>
                     </li>
                 </ul>
@@ -235,7 +263,7 @@ function googleTranslateElementInit() {
                 </div>
                 <div class="col-md-4 col-sm-9 wow bounceInDown" data-wow-duration="3s">
                     <p class="copyright-text">
-                        Copyright © IPRONETWORK 2020 All Right Reserved.
+                        Copyright ©  <?= $site_name; ?> 2020 All Right Reserved.
                     </p>
                 </div>
                 <div class="col-md-4 col-sm-3 wow fadeInRight" data-wow-duration="3s">
@@ -314,5 +342,4 @@ jQuery('#raindrops-green').raindrops({color:'#0066CC ',canvasHeight:5});
 </script>
 </body>
 
-<!-- Mirrored from coinsway.co/about by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 14 Dec 2020 10:09:42 GMT -->
 </html>

@@ -7,20 +7,23 @@ function googleTranslateElementInit() {
 }
 </script>
 
-<script type="text/javascript" src="../translate.google.com/translate_a/elementa0d8.html?cb=googleTranslateElementInit"></script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/elementa0d8.php?cb=googleTranslateElementInit"></script>
 
+
+
+<?php include('inc/settings.php'); ?>
 
 
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from coinsway.co/register by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 14 Dec 2020 10:09:51 GMT -->
+<!-- Mirrored from <?= $site_name; ?> .co/register by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 14 Dec 2020 10:09:51 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>COINSWAY | Register</title>
+    <title><?= $site_name; ?>  | Register</title>
     <!--Favicon add-->
     <link rel="shortcut icon" type="image/png" href="assets/images/logo/icon.png">
     <!--bootstrap Css-->
@@ -70,19 +73,19 @@ function googleTranslateElementInit() {
         <div class="row">
             <div class="col-md-6">
                 <div class="contact-info">
-                    <a href="mailto:support@coinsway.co"> <i class="fa fa-envelope email" aria-hidden="true"></i> support@coinsway.co</a>
-                    <a href="#"> <i class="fa fa-phone" aria-hidden="true"></i> +1(305)203-6910 </a>
+                    <a href="<?= $site_email; ?> "> <i class="fa fa-envelope email" aria-hidden="true"></i> <?= $site_email; ?> </a>
+                    <a href="#"> <i class="fa fa-phone" aria-hidden="true"></i> <?= $site_phone; ?>  </a>
                 </div>
             </div>
             <div class="col-md-6 text-right bounceIn">
                 <div class="contact-admin">
-                    <a href="login.html"><i class="fa fa-user"></i> LOGIN </a>
-                    <a href="register.html"><i class="fa fa-user-plus"></i> REGISTER</a>
+                    <a href="login.php"><i class="fa fa-user"></i> LOGIN </a>
+                    <a href="register.php"><i class="fa fa-user-plus"></i> REGISTER</a>
                     <div class="support-bar-social-links">
-                                                    <a href="https://www.facebook.com/thesoftking"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                                    <a href="https://twitter.com/thesoftking"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                                    <a href="http://thesoftking.com/contact#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                                                    <a href="http://thesoftking.com/contact#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
                                                     <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                                             </div>
                 </div>
@@ -98,21 +101,21 @@ function googleTranslateElementInit() {
         <div class="row">
             <div class="col-md-3">
                 <div class="logo">
-                    <a href="index.html"><img src="assets/images/logo/logo.png" style="max-height:60px;"></a>
+                    <a href="index.php"><img src="assets/images/logo/logo.png" style="max-height:60px;"></a>
                 </div>
             </div>
             <div class="col-md-9 text-right">
                 <ul id="header-menu" class="header-navigation">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                                            <li><a href="menu/1/who-we-are.html">Who we are</a></li>
-                                        <li><a href="faqs.html">Faq</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="about.php">About Us</a></li>
+                                            
+                                        <li><a href="faqs.php">Faq</a></li>
+                    <li><a href="contact.php">Contact</a></li>
                                             <li><a class="page-scroll" href="#">Account <i class="fa fa-angle-down""></i></a>
                             <ul class="mega-menu mega-menu1 mega-menu2 menu-postion-4">
                                 <li class="mega-list mega-list1">
-                                    <a class="page-scroll" href="login.html">Login</a>
-                                    <a class="page-scroll" href="register.html">Register</a></li>
+                                    <a class="page-scroll" href="login.php">Login</a>
+                                    <a class="page-scroll" href="register.php">Register</a></li>
                             </ul>
                         </li>
                                     </ul>
@@ -125,7 +128,7 @@ function googleTranslateElementInit() {
 <div class="main-content">
     
     <!--header section start-->
-    <section class="breadcrumb-section" style="background-image: url('assets/images/70.html')">
+    <section class="breadcrumb-section" style="background-image: url('assets/images/70.php')">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -162,7 +165,7 @@ s0.parentNode.insertBefore(s1,s0);
                             <h6>Register Form</h6>
                          </div>
                         <div class="login-form">     
-                                                        <form method="POST" action="https://coinsway.co/register">
+                                                        <form method="POST" action="https://<?= $site_name; ?> .co/register">
                                 <input type="hidden" name="_token" value="GAhpoj2IdSzShcz04H9uMPPHwgoblcqI61ze29YV">
                                 
                                 <div class="row">
@@ -209,7 +212,7 @@ s0.parentNode.insertBefore(s1,s0);
                         </div>     
                                 <div class="text-center" style="text-transform: uppercase;">
                                     <br><br>
-                                      <a href="password/reset.html">Forgot Password</a> | <a href="login.html">Login</a>
+                                      <a href="password/reset.php">Forgot Password</a> | <a href="login.php">Login</a>
                                     <br><br>
                                 </div>
                         </div>
@@ -276,7 +279,7 @@ s0.parentNode.insertBefore(s1,s0);
                     <li class="wow bounceInDown" data-wow-duration="1s" data-wow-delay="2s">
                         <div class="footer-thumb"><i class="fa fa-envelope"></i></div>
                         <div class="footer-content">
-                            <p><a href="contact.html">support@coinsway.co</a></p>
+                            <p><a href="contact.php"><?= $site_email; ?> </a></p>
                         </div>
                     </li>
                     <li class="wow bounceInDown" data-wow-duration="1s" data-wow-delay="3s">
@@ -288,7 +291,7 @@ s0.parentNode.insertBefore(s1,s0);
                     <li class="wow bounceInDown" data-wow-duration="1s" data-wow-delay="4s">
                         <div class="footer-thumb"><i class="fa fa-phone"></i></div>
                         <div class="footer-content">
-                            <p>+1(305)203-6910</p>
+                            <p><?= $site_phone; ?> </p>
                         </div>
                     </li>
                 </ul>
@@ -304,7 +307,7 @@ s0.parentNode.insertBefore(s1,s0);
                 </div>
                 <div class="col-md-4 col-sm-9 wow bounceInDown" data-wow-duration="3s">
                     <p class="copyright-text">
-                        Copyright © IPRONETWORK 2020 All Right Reserved.
+                        Copyright © <?= $site_phone; ?> 2020 All Right Reserved.
                     </p>
                 </div>
                 <div class="col-md-4 col-sm-3 wow fadeInRight" data-wow-duration="3s">
@@ -383,5 +386,5 @@ jQuery('#raindrops-green').raindrops({color:'#0066CC ',canvasHeight:5});
 </script>
 </body>
 
-<!-- Mirrored from coinsway.co/register by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 14 Dec 2020 10:09:54 GMT -->
+<!-- Mirrored from <?= $site_name; ?> .co/register by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 14 Dec 2020 10:09:54 GMT -->
 </html>

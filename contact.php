@@ -7,19 +7,20 @@ function googleTranslateElementInit() {
 }
 </script>
 
-<script type="text/javascript" src="../translate.google.com/translate_a/elementa0d8.html?cb=googleTranslateElementInit"></script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/elementa0d8.php?cb=googleTranslateElementInit"></script>
+
+
+<?php include('inc/settings.php'); ?>
 
 
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from coinsway.co/contact by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 14 Dec 2020 10:09:45 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>COINSWAY | Contact Page</title>
+    <title><?= $site_name; ?>  | Contact Page</title>
     <!--Favicon add-->
     <link rel="shortcut icon" type="image/png" href="assets/images/logo/icon.png">
     <!--bootstrap Css-->
@@ -69,19 +70,19 @@ function googleTranslateElementInit() {
         <div class="row">
             <div class="col-md-6">
                 <div class="contact-info">
-                    <a href="mailto:support@coinsway.co"> <i class="fa fa-envelope email" aria-hidden="true"></i> support@coinsway.co</a>
-                    <a href="#"> <i class="fa fa-phone" aria-hidden="true"></i> +1(305)203-6910 </a>
+                    <a href="<?= $site_email; ?> "> <i class="fa fa-envelope email" aria-hidden="true"></i> <?= $site_email; ?> </a>
+                    <a href="#"> <i class="fa fa-phone" aria-hidden="true"></i> <?= $site_phone; ?>  </a>
                 </div>
             </div>
             <div class="col-md-6 text-right bounceIn">
                 <div class="contact-admin">
-                    <a href="login.html"><i class="fa fa-user"></i> LOGIN </a>
-                    <a href="register.html"><i class="fa fa-user-plus"></i> REGISTER</a>
+                    <a href="login.php"><i class="fa fa-user"></i> LOGIN </a>
+                    <a href="register.php"><i class="fa fa-user-plus"></i> REGISTER</a>
                     <div class="support-bar-social-links">
-                                                    <a href="https://www.facebook.com/thesoftking"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                                    <a href="https://twitter.com/thesoftking"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                                    <a href="http://thesoftking.com/contact#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                                                    <a href="http://thesoftking.com/contact#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
                                                     <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                                             </div>
                 </div>
@@ -97,21 +98,21 @@ function googleTranslateElementInit() {
         <div class="row">
             <div class="col-md-3">
                 <div class="logo">
-                    <a href="index.html"><img src="assets/images/logo/logo.png" style="max-height:60px;"></a>
+                    <a href="index.php"><img src="assets/images/logo/logo.png" style="max-height:60px;"></a>
                 </div>
             </div>
             <div class="col-md-9 text-right">
                 <ul id="header-menu" class="header-navigation">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                                            <li><a href="menu/1/who-we-are.html">Who we are</a></li>
-                                        <li><a href="faqs.html">Faq</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="about.php">About Us</a></li>
+                                            
+                                        <li><a href="faqs.php">Faq</a></li>
+                    <li><a href="contact.php">Contact</a></li>
                                             <li><a class="page-scroll" href="#">Account <i class="fa fa-angle-down""></i></a>
                             <ul class="mega-menu mega-menu1 mega-menu2 menu-postion-4">
                                 <li class="mega-list mega-list1">
-                                    <a class="page-scroll" href="login.html">Login</a>
-                                    <a class="page-scroll" href="register.html">Register</a></li>
+                                    <a class="page-scroll" href="login.php">Login</a>
+                                    <a class="page-scroll" href="register.php">Register</a></li>
                             </ul>
                         </li>
                                     </ul>
@@ -133,19 +134,7 @@ function googleTranslateElementInit() {
             </div>
             <!-- Breadcrumb section End -->
           </div>
-          <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5e87ebde69e9320caac01bbb/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+     
         </div>
       </div>
     </section>
@@ -169,19 +158,19 @@ s0.parentNode.insertBefore(s1,s0);
                                         <li>
                                           <div class="contact-thumb"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
                                           <div class="contact-text">
-                                            <p>Address:<span>22 Albert Road SOUTH EAST, LONDON SE67 3NX</span></p>
+                                            <p>Address:<span><?= $site_address ?></span></p>
                                           </div>
                                         </li>
                                         <li>
                                           <div class="contact-thumb"><i class="fa fa-phone" aria-hidden="true"></i></div>
                                           <div class="contact-text">
-                                            <p>Call Us :<span>+1(305)203-6910</span></p>
+                                            <p>Call Us :<span><?= $site_phone; ?> </span></p>
                                           </div>
                                         </li>
                                         <li>
                                           <div class="contact-thumb"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
                                           <div class="contact-text">
-                                            <p>Mail Us :<span>support@coinsway.co</span></p>
+                                            <p>Mail Us :<span><?= $site_email; ?> </span></p>
                                           </div>
                                         </li>
                                       </ul>
@@ -196,7 +185,7 @@ s0.parentNode.insertBefore(s1,s0);
                                         <h2>Send Message Us</h2>
                                        
                                                                                                                           
-                                       <form action="https://coinsway.co/contact" method="post">
+                                       <form action="https://<?= $site_name; ?> .co/contact" method="post">
                                     <input type="hidden" name="_token" value="GAhpoj2IdSzShcz04H9uMPPHwgoblcqI61ze29YV">
                                             <div class="row clearfix">
                                                 <div class="col-md-6  col-xs-12 form-group">
@@ -269,23 +258,26 @@ s0.parentNode.insertBefore(s1,s0);
                     <h2><span>PAYMENT METHOD </span> WE ACCEPT</h2>
                     <p><img src="assets/images/logo/icon.png" alt="icon"></p>
                 </div><!-- section-heading -->
-                <div class="section-wrapper">
-                    <div class="client-list">
-                        <!-- Swiper -->
-                        <div class="swiper-container client-container">
-                            <div class="swiper-wrapper">
-                                                                   <div class="swiper-slide"><div class="our-client wow rotateIn" data-wow-duration="2s"><a href="#"><img class="img-responsive" src="assets/images/1591631032h7.png" alt="client"></a></div></div>
-                                                            </div>
-                            <!-- Add Arrows -->
-                            <div class="swiper-button-next">
-                                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                            </div>
-                            <div class="swiper-button-prev">
-                                <i class="fa fa-angle-double-left" aria-hidden="true"></i>
-                            </div>
-                        </div><!-- client container -->
-                    </div><!-- client list-->
-                </div><!-- swiper wrapper -->
+                <div class="row">
+                    <div class="col-md-3">
+                    <img class="img-responsive" src="inc/btc.jpg" alt="client">
+                    </div>
+
+                    <div class="col-md-3">
+                    <img class="img-responsive" src="inc/eth.jpeg" alt="client">
+                    </div>
+
+
+                    <div class="col-md-3">
+                    <img class="img-responsive" src="inc/lit.png" alt="client">
+                    </div>
+
+
+                    <div class="col-md-3">
+                    <img class="img-responsive" src="inc/rip.jpeg" alt="client">
+                    </div>
+
+                </div>
             </div>
 
         </div><!-- row -->
@@ -309,7 +301,7 @@ s0.parentNode.insertBefore(s1,s0);
                     <li class="wow bounceInDown" data-wow-duration="1s" data-wow-delay="2s">
                         <div class="footer-thumb"><i class="fa fa-envelope"></i></div>
                         <div class="footer-content">
-                            <p><a href="contact.html">support@coinsway.co</a></p>
+                            <p><a href="contact.php"><?= $site_email; ?> </a></p>
                         </div>
                     </li>
                     <li class="wow bounceInDown" data-wow-duration="1s" data-wow-delay="3s">
@@ -321,7 +313,7 @@ s0.parentNode.insertBefore(s1,s0);
                     <li class="wow bounceInDown" data-wow-duration="1s" data-wow-delay="4s">
                         <div class="footer-thumb"><i class="fa fa-phone"></i></div>
                         <div class="footer-content">
-                            <p>+1(305)203-6910</p>
+                            <p><?= $site_phone; ?> </p>
                         </div>
                     </li>
                 </ul>
@@ -337,7 +329,7 @@ s0.parentNode.insertBefore(s1,s0);
                 </div>
                 <div class="col-md-4 col-sm-9 wow bounceInDown" data-wow-duration="3s">
                     <p class="copyright-text">
-                        Copyright © IPRONETWORK 2020 All Right Reserved.
+                        Copyright © <?= $site_phone; ?> 2020 All Right Reserved.
                     </p>
                 </div>
                 <div class="col-md-4 col-sm-3 wow fadeInRight" data-wow-duration="3s">
@@ -416,5 +408,5 @@ jQuery('#raindrops-green').raindrops({color:'#0066CC ',canvasHeight:5});
 </script>
 </body>
 
-<!-- Mirrored from coinsway.co/contact by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 14 Dec 2020 10:09:46 GMT -->
+<!-- Mirrored from <?= $site_name; ?> .co/contact by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 14 Dec 2020 10:09:46 GMT -->
 </html>

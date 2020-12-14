@@ -7,18 +7,21 @@ function googleTranslateElementInit() {
 }
 </script>
 
-<script type="text/javascript" src="../translate.google.com/translate_a/elementa0d8.html?cb=googleTranslateElementInit"></script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/elementa0d8.php?cb=googleTranslateElementInit"></script>
+
+<?php include('inc/settings.php'); ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from coinsway.co/faqs by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 14 Dec 2020 10:09:43 GMT -->
+<!-- Mirrored from <?= $site_name; ?> .co/faqs by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 14 Dec 2020 10:09:43 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>COINSWAY | FAQS Page</title>
+    <title><?= $site_name; ?>  | FAQS Page</title>
     <!--Favicon add-->
     <link rel="shortcut icon" type="image/png" href="assets/images/logo/icon.png">
     <!--bootstrap Css-->
@@ -68,19 +71,19 @@ function googleTranslateElementInit() {
         <div class="row">
             <div class="col-md-6">
                 <div class="contact-info">
-                    <a href="mailto:support@coinsway.co"> <i class="fa fa-envelope email" aria-hidden="true"></i> support@coinsway.co</a>
-                    <a href="#"> <i class="fa fa-phone" aria-hidden="true"></i> +1(305)203-6910 </a>
+                    <a href="<?= $site_email; ?> "> <i class="fa fa-envelope email" aria-hidden="true"></i> <?= $site_email; ?> </a>
+                    <a href="#"> <i class="fa fa-phone" aria-hidden="true"></i> <?= $site_phone; ?>  </a>
                 </div>
             </div>
             <div class="col-md-6 text-right bounceIn">
                 <div class="contact-admin">
-                    <a href="login.html"><i class="fa fa-user"></i> LOGIN </a>
-                    <a href="register.html"><i class="fa fa-user-plus"></i> REGISTER</a>
+                    <a href="login.php"><i class="fa fa-user"></i> LOGIN </a>
+                    <a href="register.php"><i class="fa fa-user-plus"></i> REGISTER</a>
                     <div class="support-bar-social-links">
-                                                    <a href="https://www.facebook.com/thesoftking"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                                    <a href="https://twitter.com/thesoftking"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                                    <a href="http://thesoftking.com/contact#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                                                    <a href="http://thesoftking.com/contact#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
                                                     <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                                             </div>
                 </div>
@@ -96,21 +99,21 @@ function googleTranslateElementInit() {
         <div class="row">
             <div class="col-md-3">
                 <div class="logo">
-                    <a href="index.html"><img src="assets/images/logo/logo.png" style="max-height:60px;"></a>
+                    <a href="index.php"><img src="assets/images/logo/logo.png" style="max-height:60px;"></a>
                 </div>
             </div>
             <div class="col-md-9 text-right">
                 <ul id="header-menu" class="header-navigation">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                                            <li><a href="menu/1/who-we-are.html">Who we are</a></li>
-                                        <li><a href="faqs.html">Faq</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="about.php">About Us</a></li>
+                                            
+                                        <li><a href="faqs.php">Faq</a></li>
+                    <li><a href="contact.php">Contact</a></li>
                                             <li><a class="page-scroll" href="#">Account <i class="fa fa-angle-down""></i></a>
                             <ul class="mega-menu mega-menu1 mega-menu2 menu-postion-4">
                                 <li class="mega-list mega-list1">
-                                    <a class="page-scroll" href="login.html">Login</a>
-                                    <a class="page-scroll" href="register.html">Register</a></li>
+                                    <a class="page-scroll" href="login.php">Login</a>
+                                    <a class="page-scroll" href="register.php">Register</a></li>
                             </ul>
                         </li>
                                     </ul>
@@ -164,66 +167,162 @@ s0.parentNode.insertBefore(s1,s0);
         </div>
         <div class="row">
           <div class="col-md-12">
-                <div id="faq">
-        <div class="container">
-            <div class="faq-content">
-                <div class="tab-content">
-                    
-                    <div role="tabpanel" class="tab-pane fade active in" id="domainsTab">
-                        <div class="panel-group accordion" id="accordion4" >
-                                                              <div class="panel panel-default active">
-                                    <div class="panel-heading" role="tab">
-                                        
-                                            <h4 class="panel-title"> <a href="#domainsTabQ5" role="button" data-toggle="collapse" data-parent="#accordion4" aria-expanded="false" class="collapsed"> Anim pariatur cliche reprehenderit <i class="fa fa-minus"></i> </a></h4> 
-                                    </div>
-                                    <div id="domainsTabQ5" class="panel-collapse collapse" role="tabpanel" aria-expanded="false" style="height: 0px;">
-                                        <div class="panel-body">
-                                            <p> <h2 style="margin-top: 0px; margin-right: 0px; margin-left: 0px; padding: 0px; line-height: 24px; font-family: DauphinPlain; font-size: 24px; color: rgb(0, 0, 0);">What is Lorem Ipsum?</h2><p style="margin-bottom: 15px; padding: 0px; text-align: justify; color: rgb(0, 0, 0); font-family: &quot;Open Sans&quot;, Arial, sans-serif;"><strong style="margin: 0px; padding: 0px;">Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                                         <div class="panel panel-default active">
-                                    <div class="panel-heading" role="tab">
-                                        
-                                            <h4 class="panel-title"> <a href="#domainsTabQ4" role="button" data-toggle="collapse" data-parent="#accordion4" aria-expanded="false" class="collapsed"> Anim pariatur cliche reprehenderit <i class="fa fa-minus"></i> </a></h4> 
-                                    </div>
-                                    <div id="domainsTabQ4" class="panel-collapse collapse" role="tabpanel" aria-expanded="false" style="height: 0px;">
-                                        <div class="panel-body">
-                                            <p> <h2 style="margin-top: 0px; margin-right: 0px; margin-left: 0px; padding: 0px; line-height: 24px; font-family: DauphinPlain; font-size: 24px; color: rgb(0, 0, 0);">What is Lorem Ipsum?</h2><p style="margin-bottom: 15px; padding: 0px; text-align: justify; color: rgb(0, 0, 0); font-family: &quot;Open Sans&quot;, Arial, sans-serif;"><strong style="margin: 0px; padding: 0px;">Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                                         <div class="panel panel-default active">
-                                    <div class="panel-heading" role="tab">
-                                        
-                                            <h4 class="panel-title"> <a href="#domainsTabQ3" role="button" data-toggle="collapse" data-parent="#accordion4" aria-expanded="false" class="collapsed"> Lorem Ipsum is simply dummy text of the printing <i class="fa fa-minus"></i> </a></h4> 
-                                    </div>
-                                    <div id="domainsTabQ3" class="panel-collapse collapse" role="tabpanel" aria-expanded="false" style="height: 0px;">
-                                        <div class="panel-body">
-                                            <p> What is Lorem Ipsum?
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                                         <div class="panel panel-default active">
-                                    <div class="panel-heading" role="tab">
-                                        
-                                            <h4 class="panel-title"> <a href="#domainsTabQ1" role="button" data-toggle="collapse" data-parent="#accordion4" aria-expanded="false" class="collapsed"> Anim pariatur cliche reprehenderit <i class="fa fa-minus"></i> </a></h4> 
-                                    </div>
-                                    <div id="domainsTabQ1" class="panel-collapse collapse" role="tabpanel" aria-expanded="false" style="height: 0px;">
-                                        <div class="panel-body">
-                                            <p> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                                 </div>
-                    </div>
 
-                </div>
-            </div>
+
+
+
+
+
+
+
+          <div class="inside_wrap faq">
+  <div class="content">
+    <div class="panel-group one" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne">
+          <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Is <?= $site_name; ?> a registered company?</a> </h4>
         </div>
+        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">Yes, <?= $site_name; ?> is registered in the Seychelles  as "<?= $site_name; ?>  MINING TECHNOLOGIES LTD".</div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingTwo">
+          <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">How does <?= $site_name; ?> earn profits for its members?</a> </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body"><?= $site_name; ?>  is involved in cloud mining, which enables our company to earn Bitcoins without mining hardware, software, electricity, or bandwidth.</div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingThree">
+          <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">How can I register a new account?</a> </h4>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="panel-body"> To register a new account, simply click the “Register New Account” button or “Sign Up” link and fill out the required information.</div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingFour">
+          <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"> What is the minimum and maximum amount for deposit?</a> </h4>
+        </div>
+        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+          <div class="panel-body">The minimum deposit amount is $20, the maximum you can deposit at one time is $500,000 Per each deposit , Surely you can make deposit higher than $500,000 by several deposits.</div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingFive">
+          <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">What is the minimum and maximum amount for withdrawal?</a> </h4>
+        </div>
+        <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+          <div class="panel-body">The minimum amount for withdrawal is $5. There is no maximum limit for withdrawal.</div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingFive1">
+          <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive1" aria-expanded="false" aria-controls="collapseFive1"> How long does it take for my deposit to be added?</a> </h4>
+        </div>
+        <div id="collapseFive1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive1">
+          <div class="panel-body">Your deposit is automatically added after 3 network confirmations for cryptocurrencies but for PM and payeer this be add as soon as you paid funds.</div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingFive2">
+          <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive2" aria-expanded="false" aria-controls="collapseFive2"> How do I request a withdrawal?</a> </h4>
+        </div>
+        <div id="collapseFive2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive2">
+          <div class="panel-body"> You can request a withdrawal by clicking the “Withdraw” button in the member's area and entering the amount you want to withdraw.</div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingFive3">
+          <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive3" aria-expanded="false" aria-controls="collapseFive3"> Are there any withdrawal fees?</a> </h4>
+        </div>
+        <div id="collapseFive3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive3">
+          <div class="panel-body"> No, there are no fees for withdrawal. </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingFive4">
+          <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive4" aria-expanded="false" aria-controls="collapseFive4"> How long does it take for my withdrawal to be sent?</a> </h4>
+        </div>
+        <div id="collapseFive4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive4">
+          <div class="panel-body"> Your withdrawal is sent Instant after it is requested .</div>
+        </div>
+      </div>
+      
+        <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingFive4">
+          <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive14" aria-expanded="false" aria-controls="collapseFive14"> Can I withdraw my principal deposit?</a> </h4>
+        </div>
+        <div id="collapseFive14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive14">
+          <div class="panel-body">No, your principal deposit stays in your account and continues earning interest forever.</div>
+        </div>
+      </div>
+      
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingFive5">
+          <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive5" aria-expanded="false" aria-controls="collapseFive5"> How can I change my Payment address?</a> </h4>
+        </div>
+        <div id="collapseFive5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive5">
+          <div class="panel-body"> You can change your payment withdrawal address by clicking the “Settings” button on the menu after logging in to your account. Enter your new payment address and save the changes.</div>
+        </div>
+      </div>
+      <div class="panel panel-default two">
+        <div class="panel-heading" role="tab" id="headingSix">
+          <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix"> How can I change my account e-mail?</a> </h4>
+        </div>
+        <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+          <div class="panel-body"> For security reasons, we do not allow users to change their e-mail after registration. If you would like to change your e-mail, please contact our support and we will change it for you.</div>
+        </div>
+      </div>
+      <div class="panel panel-default two">
+        <div class="panel-heading" role="tab" id="headingSeven">
+          <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven"> Do I need to make a deposit to refer new members?</a> </h4>
+        </div>
+        <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+          <div class="panel-body"> No, you do not need to make a deposit to take part in our referral program.</div>
+        </div>
+      </div>
+      <div class="panel panel-default two">
+        <div class="panel-heading" role="tab" id="headingEight">
+          <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight"> How can I see who my upline is?</a> </h4>
+        </div>
+        <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+          <div class="panel-body"> You can see your upline by clicking on “Referrals”, and you will see the username of your upline. If there is no username there, it means you have no upline.</div>
+        </div>
+      </div>
+      <div class="panel panel-default two">
+        <div class="panel-heading" role="tab" id="headingNine">
+          <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine"> Can I register multiple accounts from the same computer?</a> </h4>
+        </div>
+        <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
+          <div class="panel-body">Yes, you can register multiple accounts from the same computer or IP address, but they cannot be your referral.</div>
+        </div>
+      </div>
+      <div class="panel panel-default two">
+        <div class="panel-heading" role="tab" id="headingTen">
+          <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen"> How can I contact your support?</a> </h4>
+        </div>
+        <div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
+          <div class="panel-body"> You can contact our support through clicking the “Contact Us” link. We offer support through Contact Form, and E-mail.</div>
+        </div>
+      </div>
     </div>
-          </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
         </div>
       </div>
     </section> 
@@ -246,23 +345,26 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                     <h2><span>PAYMENT METHOD </span> WE ACCEPT</h2>
                     <p><img src="assets/images/logo/icon.png" alt="icon"></p>
                 </div><!-- section-heading -->
-                <div class="section-wrapper">
-                    <div class="client-list">
-                        <!-- Swiper -->
-                        <div class="swiper-container client-container">
-                            <div class="swiper-wrapper">
-                                                                   <div class="swiper-slide"><div class="our-client wow rotateIn" data-wow-duration="2s"><a href="#"><img class="img-responsive" src="assets/images/1591631032h7.png" alt="client"></a></div></div>
-                                                            </div>
-                            <!-- Add Arrows -->
-                            <div class="swiper-button-next">
-                                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                            </div>
-                            <div class="swiper-button-prev">
-                                <i class="fa fa-angle-double-left" aria-hidden="true"></i>
-                            </div>
-                        </div><!-- client container -->
-                    </div><!-- client list-->
-                </div><!-- swiper wrapper -->
+                <div class="row">
+                    <div class="col-md-3">
+                    <img class="img-responsive" src="inc/btc.jpg" alt="client">
+                    </div>
+
+                    <div class="col-md-3">
+                    <img class="img-responsive" src="inc/eth.jpeg" alt="client">
+                    </div>
+
+
+                    <div class="col-md-3">
+                    <img class="img-responsive" src="inc/lit.png" alt="client">
+                    </div>
+
+
+                    <div class="col-md-3">
+                    <img class="img-responsive" src="inc/rip.jpeg" alt="client">
+                    </div>
+
+                </div>
             </div>
 
         </div><!-- row -->
@@ -286,7 +388,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                     <li class="wow bounceInDown" data-wow-duration="1s" data-wow-delay="2s">
                         <div class="footer-thumb"><i class="fa fa-envelope"></i></div>
                         <div class="footer-content">
-                            <p><a href="contact.html">support@coinsway.co</a></p>
+                            <p><a href="contact.php"><?= $site_email; ?> </a></p>
                         </div>
                     </li>
                     <li class="wow bounceInDown" data-wow-duration="1s" data-wow-delay="3s">
@@ -298,7 +400,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                     <li class="wow bounceInDown" data-wow-duration="1s" data-wow-delay="4s">
                         <div class="footer-thumb"><i class="fa fa-phone"></i></div>
                         <div class="footer-content">
-                            <p>+1(305)203-6910</p>
+                            <p><?= $site_phone; ?> </p>
                         </div>
                     </li>
                 </ul>
@@ -314,7 +416,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                 </div>
                 <div class="col-md-4 col-sm-9 wow bounceInDown" data-wow-duration="3s">
                     <p class="copyright-text">
-                        Copyright © IPRONETWORK 2020 All Right Reserved.
+                        Copyright © <?= $site_phone; ?> 2020 All Right Reserved.
                     </p>
                 </div>
                 <div class="col-md-4 col-sm-3 wow fadeInRight" data-wow-duration="3s">
@@ -393,5 +495,5 @@ jQuery('#raindrops-green').raindrops({color:'#0066CC ',canvasHeight:5});
 </script>
 </body>
 
-<!-- Mirrored from coinsway.co/faqs by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 14 Dec 2020 10:09:45 GMT -->
+<!-- Mirrored from <?= $site_name; ?> .co/faqs by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 14 Dec 2020 10:09:45 GMT -->
 </html>

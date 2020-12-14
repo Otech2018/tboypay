@@ -1,17 +1,21 @@
+
+<?php include('inc/settings.php'); ?>
+
+
 <!DOCTYPE html>
 
 <html lang="en">
     <div style="height:62px; background-color: #FFFFFF; overflow:hidden; box-sizing: border-box; border: 1px solid #56667F; border-radius: 4px; text-align: right; line-height:14px; block-size:62px; font-size: 12px; font-feature-settings: normal; text-size-adjust: 100%; box-shadow: inset 0 -20px 0 0 #56667F;padding:1px;padding: 0px; margin: 0px; width: 100%;"><div style="height:40px; padding:0px; margin:0px; width: 100%;"><iframe src="https://widget.coinlib.io/widget?type=horizontal_v2&amp;theme=light&amp;pref_coin_id=1505&amp;invert_hover=" width="100%" height="36px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;"></iframe></div><div style="color: #FFFFFF; line-height: 14px; font-weight: 400; font-size: 11px; box-sizing: border-box; padding: 2px 6px; width: 100%; font-family: Verdana, Tahoma, Arial, sans-serif;"><a href="https://coinlib.io/" target="_blank" style="font-weight: 500; color: #FFFFFF; text-decoration:none; font-size:11px">Cryptocurrency Prices</a>&nbsp;by Coinlib</div></div>
     
 
-<!-- Mirrored from IPRONETWORK.guru/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 11 Jun 2020 08:38:04 GMT -->
+<!-- Mirrored from <?= $site_phone; ?>.guru/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 11 Jun 2020 08:38:04 GMT -->
 <!-- Added by HTTrack -->
-<!-- Mirrored from coinsway.co/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 14 Dec 2020 10:01:32 GMT -->
+<!-- Mirrored from <?= $site_name; ?> .co/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 14 Dec 2020 10:01:32 GMT -->
 <meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
     
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>COINSWAY</title>
+    <title><?= $site_name; ?> | Home </title>
         <link rel="stylesheet" href="theme/demo/assets/common/font-awesome/css/font-awesome.min.css" />
     <link rel="icon" href="assets/images/logo/icon.png">
     <link rel="stylesheet" href="maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -20,7 +24,7 @@
     <link href='theme/demo67/assets/common/css/custom.css' rel='stylesheet' type='text/css'>
     <link href='theme/demo67/assets/common/css/hover.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-    <script src="ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.html"></script>
+    <script src="ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.php"></script>
     <script src="maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="theme/demo67/assets/common/js/wow.js"></script>
     <script src="theme/demo67/assets/common/js/wow.min.js"></script>
@@ -62,10 +66,10 @@
           data: "fsyms=BTC,ETH,DASH,LTC&tsyms=USD",
           dataType : 'json',
         }).done(function(data) {
-           jQuery(".dashCoin").html('$' + data.DASH.USD);
-           jQuery(".ethCoin").html('$' + data.ETH.USD);
-           jQuery(".bitCoin").html('$' + data.BTC.USD);
-           jQuery(".liteCoin").html('$' + data.LTC.USD);
+           jQuery(".dashCoin").php('$' + data.DASH.USD);
+           jQuery(".ethCoin").php('$' + data.ETH.USD);
+           jQuery(".bitCoin").php('$' + data.BTC.USD);
+           jQuery(".liteCoin").php('$' + data.LTC.USD);
         }).fail(function() {
             console.log("API error");
         });
@@ -107,7 +111,7 @@
                                 <!-- GTranslate: https://gtranslate.io/ -->
 
 <style type="text/css">
-<!--
+
 a.gflag {vertical-align:middle;font-size:32px;padding:1px 0;background-repeat:no-repeat;background-image:url(gtranslate.net/flags/32.png);}
 a.gflag img {border:0;}
 a.gflag:hover {background-image:url(gtranslate.net/flags/32a.png);}
@@ -116,13 +120,13 @@ a.gflag:hover {background-image:url(gtranslate.net/flags/32a.png);}
 .goog-te-menu-value:hover {text-decoration:none !important;}
 body {top:0 !important;}
 #google_translate_element2 {display:none!important;}
--->
+
 </style>
 
 <div id="google_translate_element2"></div>
 <script type="text/javascript">
 function googleTranslateElementInit2() {new google.translate.TranslateElement({pageLanguage: 'en',autoDisplay: false}, 'google_translate_element2');}
-</script><script type="text/javascript" src="translate.google.com/translate_a/element78767876.html?cb=googleTranslateElementInit2"></script>
+</script><script type="text/javascript" src="translate.google.com/translate_a/element78767876.php?cb=googleTranslateElementInit2"></script>
 
 
 <script type="text/javascript">
@@ -147,20 +151,20 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
                     <div class="navwrap fadeInDown wow">
                         <div class="content">
                             <div class="logo">
-                                <a href="index-2.html"><img src="assets/images/logo/logo.png" alt="" /></a>
+                                <a href="index.php"><img src="assets/images/logo/logo.png" alt="" /></a>
                             </div>
                             <div class="menu">
                                 <ul>
                                  <li> <a href="#"> HOME </a> </li>
-                                    <li> <a href="about.html"> ABOUT US </a> </li>
-                                    <li> <a href="menu/1/who-we-are.html"> WHO WE ARE </a> </li>
+                                    <li> <a href="about.php"> ABOUT US </a> </li>
+                                    
 
                                     
-                                    <li> <a href="faqs.html"> FAQ </a> </li>
-                                    <li> <a href="contact.html"> CONTACT </a> </li>
+                                    <li> <a href="faqs.php"> FAQ </a> </li>
+                                    <li> <a href="contact.php"> CONTACT </a> </li>
                                                                            
-                                                                            <li class = "login"> <a href="login.html"> Login </a> </li>
-                                        <li class = "signup"> <a href="register.html"> Registration </a> </li>                      
+                                                                            <li class = "login"> <a href="login.php"> Login </a> </li>
+                                        <li class = "signup"> <a href="register.php"> Registration </a> </li>                      
                                        
                                         
                                                                     </ul>
@@ -173,12 +177,12 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
                             <br>
                             <br>
                             <br>
-                              <h1>COINSWAY  <span>CREATING YOUR FUTURE </span>NOW </h1>
-                                <p> Coinsway is a modern Bitcoin Investment system that works with advanced automated artificial Investment robots for crypto portfolio, which turned out to be one of the best Crypto Investment System for anyone looking for Bitcoin Investment in cryptocurrency. </p>
+                              <h1><?= $site_name; ?>   <span>CREATING YOUR FUTURE </span>NOW </h1>
+                                <p> <?= $site_name; ?>  is a modern Bitcoin Investment system that works with advanced automated artificial Investment robots for crypto portfolio, which turned out to be one of the best Crypto Investment System for anyone looking for Bitcoin Investment in cryptocurrency. </p>
                                                                  
                                                                  
-                                                                    <a href="login.html"> Login </a>
-                                    <a href="register.html"> Sign Up </a>
+                                                                    <a href="login.php"> Login </a>
+                                    <a href="register.php"> Sign Up </a>
                                                                           
                                     
                                     
@@ -197,7 +201,7 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
         <div class="investmentwrap">
             <div class="content">
                <h2 class = "bounceInDown wow"> <span> CRYPTO </span> SOLUTION </h2>
-                <p class = "bounceInDown wow"> Coinsway offers you the most reliable and new investment system to choose not only for calculations, but also for the opportunity to get the most unusual profit. </p>
+                <p class = "bounceInDown wow"> <?= $site_name; ?>  offers you the most reliable and new investment system to choose not only for calculations, but also for the opportunity to get the most unusual profit. </p>
                 <div class = "planboxwrap">
                                         <div class = "planbox">
                         <div class = "planhead"> COINS STAR </div>
@@ -217,7 +221,7 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
                         </div>
                         <div class = "planaction">
                         
-                            <a href="login.html"> Invest </a>
+                            <a href="login.php"> Invest </a>
                                                           
                         </div>
                         <div class = "plancurve one"> &nbsp; </div>
@@ -240,7 +244,7 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
                         </div>
                         <div class = "planaction">
                           
-                            <a href="login.html"> Invest </a>
+                            <a href="login.php"> Invest </a>
                                                       </div>
                         <div class = "plancurve two"> &nbsp; </div>
                     </div>
@@ -261,7 +265,7 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
                             </ul>
                         </div>
                         <div class="planaction">
-                        <a href="login.html"> Invest </a>
+                        <a href="login.php"> Invest </a>
                                                       </div>
                         <div class="plancurve three">&nbsp;</div>
                     </div>
@@ -312,7 +316,7 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
                         </div>
                         <div class = "calculatorresults">
                             <span class = "icons">
-                                <img src = "theme/%20demo67/%20assets/%20common/%20images/%20calculatortick.html" alt = "" />
+                                <img src = "theme/%20demo67/%20assets/%20common/%20images/%20calculatortick.php" alt = "" />
                             </span>
                             <p> Profit: </p>
                             <h4 id="totals"></h4>
@@ -346,10 +350,10 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
         }
         if (check) {
           const total = (amount / 100 * percent) * (count === 0 ? 1 : count) + Number(plan_return === 1 ? amount : 0);
-          $('#totals').html(total.toFixed(2) + ' USD');
+          $('#totals').php(total.toFixed(2) + ' USD');
             
         } else {
-          $('#totals').html('----');
+          $('#totals').php('----');
         }
       }
 
@@ -386,17 +390,17 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
             <div class="aboutthumb zoomIn wow"><img src="theme/demo67/assets/common/images/aboutthumb.png" /></div>
             
             <div class="abutinfos fadeInDown wow">
-            <h1><strong>COINSWAY</strong></h1>
-            <p> Coinsway is a global Bitcoin-Investment solution for all crypto enthusiasts who are looking for a reliable, secure and reliable platform. Coinsway works for a British company known as Coinsway Limited with company number # 10558170. </p>
-            <p> Coinsway provides our customers with the opportunity to grow their investment in a secure environment without the need to learn investment skill. we are very pleased with the management of safe, profitable conditions in which our customers benefit from minimal fuss and optimal convenience. The Coinsway Expert team is authorized to provide simple, automated and user-friendly regularity for investment and growth in the rapidly growing cryptocurrency market. </p>
-            <a href="about.html"> more </a> </div>
+            <h1><strong><?= $site_name; ?> </strong></h1>
+            <p> <?= $site_name; ?>  is a global Bitcoin-Investment solution for all crypto enthusiasts who are looking for a reliable, secure and reliable platform. <?= $site_name; ?>  works for a British company known as <?= $site_name; ?>  Limited with company number # 10558170. </p>
+            <p> <?= $site_name; ?>  provides our customers with the opportunity to grow their investment in a secure environment without the need to learn investment skill. we are very pleased with the management of safe, profitable conditions in which our customers benefit from minimal fuss and optimal convenience. The <?= $site_name; ?>  Expert team is authorized to provide simple, automated and user-friendly regularity for investment and growth in the rapidly growing cryptocurrency market. </p>
+            <a href="about.php"> more </a> </div>
             </div>
            
                     <div class="banner">
                         <div class="content">
                             <div class="left fadeInDown wow"><br>
                             
-                              <h1>COINSWAY IS POWERED BY  <span>Bitcoin INNOVATIVE NEXT GENERATION </span> CRYPTOCURRENCY</h1>
+                              <h1><?= $site_name; ?>  IS POWERED BY  <span>Bitcoin INNOVATIVE NEXT GENERATION </span> CRYPTOCURRENCY</h1>
             
         </div>
         <div class="particles2">
@@ -408,7 +412,7 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
             <div class="left fadeInDown wow">
                <h4> <span> Tiered </span> REFERENCE PROGRAM </h4>
                 <p> Bitcoin investment with the most premium level referral commissions program by contacting your friends, relatives, colleagues, and your network circles. </p>
-                <a href="login.html"> Participate </a>
+                <a href="login.php"> Participate </a>
             </div>
             <div class="right">
                                    <div class="right">
@@ -436,7 +440,7 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
                       
                 
                 
-                              <a target="_blank" href="https://t.me/coinsway"><i class="fa fa-telegram" style="font-size:48px;color:blue"></i>
+                              <a target="_blank" href="https://t.me/<?= $site_name; ?> "><i class="fa fa-telegram" style="font-size:48px;color:blue"></i>
                                    
                                    
                                    
@@ -447,7 +451,7 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
                         <img src="#" alt="" />
                     </div>
                     <div class="certificateaction">
-                        <a href="login.html" target="_blank" class="viewcompinfo">Get Started</a> 
+                        <a href="login.php" target="_blank" class="viewcompinfo">Get Started</a> 
                     </div>
                 </div>
             </div>
@@ -456,7 +460,7 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
     <div class="security">
         <div class="content">
             <h2 class="bounceInDown wow">
-                <span>safety</span> coinsway            </h2>
+                <span>safety</span> <?= $site_name; ?>             </h2>
             <center>
                 <div class="securitybox one flipInX wow">
                     <img src="theme/demo67/assets/common/images/geotrust.png" alt="" />
@@ -478,10 +482,10 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
            <h2 class = "bounceInDown wow"> WHAT <span> WE OFFER </span> FOR <br /> OUR INVESTORS? </h2>
             <div class = "offerbox bounceInUp wow">
                 <span class = "icon">
-                    <img src = "theme/%20demo67/%20assets/%20common/%20images/%20offericon1.html" alt = "" />
+                    <img src = "theme/%20demo67/%20assets/%20common/%20images/%20offericon1.php" alt = "" />
                 </span>
                 <h3> Uniform profitable maturity </h3>
-                <p> Coinsway is a competent and strong team that offers consistent growth in your investment on an ongoing and cyclical basis. </p>
+                <p> <?= $site_name; ?>  is a competent and strong team that offers consistent growth in your investment on an ongoing and cyclical basis. </p>
             </div>
             <div class="offerbox bounceInUp wow">
                 <span class="icon">
@@ -492,7 +496,7 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
             </div>
             <div class = "offerbox bounceInUp wow">
                 <span class = "icon">
-                    <img src = "theme/%20demo67/%20assets/%20common/%20images/%20offericon3.html" alt = "" />
+                    <img src = "theme/%20demo67/%20assets/%20common/%20images/%20offericon3.php" alt = "" />
                 </span>
                 <h3> Professional Support </h3>
                 <p> We provide round-the-clock customer support via email and telegram chat. Our support representatives are available 24 hours to find out questions of any complexity. </p>
@@ -506,7 +510,7 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
             <div class = "statwrap">
                 <div class = "statbox one flipInY wow">
                     <span class = "icon">
-                        <img src = "theme/%20demo67/%20assets/%20common/%20images/%20staticon1.html" alt = "" />
+                        <img src = "theme/%20demo67/%20assets/%20common/%20images/%20staticon1.php" alt = "" />
                     </span>
                     <div class = "infos">
                         <h4> 1 MILLION</h4>
@@ -524,7 +528,7 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
                 </div>
                 <div class = "statbox three flipInX wow">
                     <span class = "icon">
-                        <img src = "theme/%20demo67/%20assets/%20common/%20images/%20staticon3.html" alt = "" />
+                        <img src = "theme/%20demo67/%20assets/%20common/%20images/%20staticon3.php" alt = "" />
                     </span>
                     <div class = "infos">
                         <h4> 80 <i class = "fa fa-flag"> </i> </h4>
@@ -533,7 +537,7 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
                 </div>
                 <div class = "statbox four flipInX wow">
                     <span class = "icon">
-                        <img src = "theme/%20demo67/%20assets/%20common/%20images/%20staticon4.html" alt = "" />
+                        <img src = "theme/%20demo67/%20assets/%20common/%20images/%20staticon4.php" alt = "" />
                     </span>
                     <div class = "infos">
                         <h4> 1K </h4>
@@ -811,7 +815,7 @@ function googleTranslateElementInit() {
 }
 </script>
 
-<script type="text/javascript" src="../translate.google.com/translate_a/elementa0d8.html?cb=googleTranslateElementInit"></script>       
+<script type="text/javascript" src="https://translate.google.com/translate_a/elementa0d8.php?cb=googleTranslateElementInit"></script>       
                 
     </div>
     <div class="modal fade" id="myModal" role="dialog">
@@ -834,24 +838,24 @@ function googleTranslateElementInit() {
         <div class="content">
             <div class="copyright">
                 <p>
-                    <a href="index-2.html">
-                        <img src="../www.coinsway.com/assets/images/logo/logo.png" alt="" />
+                    <a href="index.php">
+                        <img src="../www.<?= $site_name; ?> .com/assets/images/logo/logo.png" alt="" />
                     </a>
                 </p>
-                <p>&copy; 2020 COINSWAY ALL RIGHTS RESERVED.</p>
+                <p>&copy; 2020 <?= $site_name; ?>  ALL RIGHTS RESERVED.</p>
             </div>
             <div class="footerlistings">
                 <ul>
                     <li> <a href="#"> HOME </a> </li>
-                    <li> <a href="about.html"> ABOUT US </a> </li>
-                    <li> <a href="menu/1/who-we-are.html"> WHO WE ARE </a> </li>
-                    <li> <a href="contact.html"> CONTACT </a> </li>
+                    <li> <a href="about.php"> ABOUT US </a> </li>
+                    
+                    <li> <a href="contact.php"> CONTACT </a> </li>
                 </ul>
             </div>
             <div class = "footerlistings">
                 <ul>
                     
-                    <li> <a href="faqs.html"> FAQ </a> </li>
+                    <li> <a href="faqs.php"> FAQ </a> </li>
                     
                     
                 </ul>
@@ -859,7 +863,7 @@ function googleTranslateElementInit() {
             <div class="footeradress">
                              
                              
-          <p class="email">support@coinsway.com</p>
+          <p class="email"><?= $site_email; ?> m</p>
                           
                           
                           
@@ -872,7 +876,7 @@ function googleTranslateElementInit() {
     </div>
 </body>
 
-<!-- Mirrored from coinsway.guru/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 11 Jun 2020 08:38:40 GMT -->
+<!-- Mirrored from <?= $site_name; ?> .guru/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 11 Jun 2020 08:38:40 GMT -->
 
-<!-- Mirrored from coinsway.co/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 14 Dec 2020 10:05:12 GMT -->
+<!-- Mirrored from <?= $site_name; ?> .co/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 14 Dec 2020 10:05:12 GMT -->
 </html>
