@@ -195,12 +195,12 @@ $value = $quantity / $result;
 <b>
 
 
-<img src="../assets/home/images/tivo.png" alt="homepage" class="dark-logo" style="width:70px;" />
+<img src="../assets/images/logo/logo.png" alt="homepage" class="dark-logo" style="width:70px;" />
 </b>
 
 <span>
 
-<img src="../assets/home/images/tivo.png" style="width:70px;" class="light-logo" alt="homepage" /></span> </a>
+<img src="../assets/images/logo/logo.png" style="width:70px;" class="light-logo" alt="homepage" /></span> </a>
 </div>
   
 
