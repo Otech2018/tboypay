@@ -1,3 +1,138 @@
+
+
+<?php include('inc/settings.php'); 
+
+if (isset($_POST['reg_btn'])){
+
+	 //if isset statement starts
+	 $name = addslashes(htmlentities($_POST['name']));
+	 $fullname = addslashes(htmlentities($_POST['fullname']));
+	 $ref_email1 = addslashes(htmlentities($_POST['ref_email']));
+	 $email = addslashes(htmlentities($_POST['email']));
+	 $password = addslashes(htmlentities($_POST['password']));
+	 $password_confirmation = addslashes(htmlentities($_POST['password_confirmation']));
+	
+	 
+			if($password === $password_confirmation)  //check password match starts
+			{  
+
+					//check user existence
+				$query ="SELECT * from users where user_email ='$email'  or user_name ='$name'  ";
+				$query_run  =new run_query($query);
+					if( $query_run->num_rows != 1){
+
+							
+									
+											if(!empty($ref_email1))
+											{   //check and credit referrer email starts
+													$queryss ="SELECT * from user_ref where user_ref_email ='$ref_email1' ";
+													$query_runaa  =new run_query($queryss);
+											if( $query_runaa->num_rows == 0){
+
+															echo "<script>alert(\"Invalid Referral  !!! Please Check the Referral or leave it blank\"); window.location.replace(\"../register.html\"); </script>";
+													}else{
+											$user_ref_data =	$query_runaa->result();
+										extract($user_ref_data );		
+													
+						 $query211 = new run_query("INSERT into user_ref set user_ref_email='$name', gen1_email='$ref_email1', reg_date='$reg_Date', gen2_email='$gen1_email',gen3_email='$gen2_email' " );
+						 
+																	$query21 =  "INSERT into users set  user_name='$name', fullname='$fullname', user_password='$password',  user_email='$email',     reg_date='$reg_Date', user_referrer='$ref_email1', user_ref_bonus='0', user_status='Active' ";
+														
+																	 $query_runer =new run_query($query21) ;
+																	
+																				echo "<script>alert(\"Account Registered Successfully!!! Its Now Time TO LogIn\"); window.location.replace(\"../login.html\"); </script>";
+													}
+											} else{     //check and credit referrer email ends
+														$query21 =  "INSERT into users set  user_name='$name', user_password='$password', fullname='$fullname',  user_email='$email',   reg_date='$reg_Date', user_referrer='$ref_email1', user_status='Active', user_ref_bonus='0'  ";
+															 $query211 = new run_query("INSERT into user_ref set user_ref_email='$name'  " );
+															
+															 
+																	if( $query_runer =new run_query($query21) ) {
+
+
+																		$site_email_send = "info@KretoInvestment.com";		
+$welcome_email_subject = "Welcome to $site_name";
+$welcome_email_headers .= "Content-type:text/html;charset=UTF-8 \r\n";
+$welcome_email_headers .= "From: $site_name";	
+
+
+$welcome_email_body = "
+
+<html>
+<head>
+<title> Welcome to $site_name </title>
+</head>
+<body>
+<b>Hello, $name<b> <br/>
+<h2>Welcome to $site_name</h2>
+Your Registration Was Successful, <br/>
+<b><i>We are Happy To Have  you on Board. </i></b><br/>
+You can now login with your Credential!!! <br/><br/>
+<hr/>
+For enquiries, <br/>
+Contact us on <br/>
+
+<b>
+$site_email <br/>
+
+$site_phone <br/>
+</b>
+Visit us on <br/>
+
+https://$site_name.com <br/><br/><br/>
+
+Regards,  $site_name.
+</body>
+</html>
+
+";
+
+mail($email,$welcome_email_subject,$welcome_email_body,$welcome_email_headers);
+																	
+															
+																		
+																			echo "<script>alert(\"Account Registered Successfully!!! Its Now Time TO LogIn\"); window.location.replace(\"../login.html\"); </script>";
+
+														}else{
+																echo "<script>alert(\"An Error Occurred Please Try Again \"); window.location.replace(\"../register.php\"); </script>";
+																} 
+																
+													}
+									
+							
+					}else{
+
+							echo "<script>alert(\"Username or Email Already Exits \"); window.location.replace(\"../register.php\"); </script>";
+
+							}   //check user existence ends
+			
+			}else	{
+				  echo "<script>alert(\"Password Not Match!!! \"); window.location.replace(\"../register.php\"); </script>";
+					}	//check password match ends
+
+
+}
+	 
+ 
+ @$ref_email1 = addslashes(htmlentities($_GET['ref']));
+
+
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div style="height:62px; background-color: #FFFFFF; overflow:hidden; box-sizing: border-box; border: 1px solid #56667F; border-radius: 4px; text-align: right; line-height:14px; block-size:62px; font-size: 12px; font-feature-settings: normal; text-size-adjust: 100%; box-shadow: inset 0 -20px 0 0 #56667F;padding:1px;padding: 0px; margin: 0px; width: 100%;"><div style="height:40px; padding:0px; margin:0px; width: 100%;"><iframe src="https://widget.coinlib.io/widget?type=horizontal_v2&amp;theme=light&amp;pref_coin_id=1505&amp;invert_hover=" width="100%" height="36px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;"></iframe></div><div style="color: #FFFFFF; line-height: 14px; font-weight: 400; font-size: 11px; box-sizing: border-box; padding: 2px 6px; width: 100%; font-family: Verdana, Tahoma, Arial, sans-serif;"><a href="https://coinlib.io/" target="_blank" style="font-weight: 500; color: #FFFFFF; text-decoration:none; font-size:11px">Cryptocurrency Prices</a>&nbsp;by Coinlib</div></div>
  <div id="google_translate_element"></div>
 
@@ -10,8 +145,6 @@ function googleTranslateElementInit() {
 <script type="text/javascript" src="https://translate.google.com/translate_a/elementa0d8.php?cb=googleTranslateElementInit"></script>
 
 
-
-<?php include('inc/settings.php'); ?>
 
 
 <!DOCTYPE html>
@@ -138,18 +271,7 @@ function googleTranslateElementInit() {
             </div>
             <!-- Breadcrumb section End -->
           </div>
-          <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5e87ebde69e9320caac01bbb/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
+
 <!--End of Tawk.to Script-->
         </div>
       </div>
@@ -165,12 +287,11 @@ s0.parentNode.insertBefore(s1,s0);
                             <h6>Register Form</h6>
                          </div>
                         <div class="login-form">     
-                                                        <form method="POST" action="https://<?= $site_name; ?> .co/register">
-                                <input type="hidden" name="_token" value="GAhpoj2IdSzShcz04H9uMPPHwgoblcqI61ze29YV">
+                                                        <form method="POST" >
                                 
                                 <div class="row">
                                     <div class="col-md-6">
-                                                                                    <input type="text" name="under_reference" id="under_reference" value="" placeholder="Reference ID"/>
+                                                                                    <input type="text" name="under_reference" id="under_reference" value="" placeholder="Referral Username"/>
                                                                             </div>
                                     <div class="col-md-6">
                                          <input type="text"  name="username" id="username" required placeholder="Enter your Username"/>
