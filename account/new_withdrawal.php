@@ -1,7 +1,8 @@
 
 <?php
 
-include('../frm/set.php');
+ include('../inc/settings.php'); 
+
 
 if( !loggedin() ){
 
