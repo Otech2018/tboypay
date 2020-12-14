@@ -1,0 +1,1878 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	font-family: 'Montserrat', sans-serif;
+	color: #435469;
+	background: #e0ecf9;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 500;
+	padding: 0;
+	margin: 0
+}
+p {
+	text-align: justify;
+	margin: 0 0 20px;
+}
+a {
+	color: #43db62;
+	outline: none;
+	text-decoration: none
+}
+a:hover, a:active, a:focus {
+	color: #0e4681;
+	text-decoration: none;
+	outline: none
+}
+img {
+	max-width: 100%
+}
+label {
+	font-weight: 400
+}
+input[type="text"], input[type="password"], input[type="email"] {
+	color: #fff;
+	width: 100%;
+	height: 40px;
+	background: #0668b2;
+	border: 1px solid #0668b2;
+	padding: 0 15px;
+	border-radius: 4px;
+	font-size: 15px;
+}
+textarea {
+	color: #fff;
+	width: 100%;
+	border: 1px solid #0668b2;
+	background: #0668b2;
+	padding: 10px;
+	border-radius: 4px;
+	resize: none;
+	font-size: 15px;
+}
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, .form-container textarea:focus {
+	border: 1px solid #fcc40f
+}
+input[type="submit"], input[type="button"] {
+    background: #fabd4e;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    line-height: 40px;
+    border-radius: 50px;
+    display: inline-block;
+    padding: 0 40px;
+    font-weight: 600;
+}
+input[type="submit"]:hover, input[type="button"]:hover {
+	color: #fff;
+	background: #f5a720
+}
+select {
+	color: #fff;
+	font-size: 13px;
+	border: 1px solid #0668b2;
+	border-radius: 4px;
+	width: auto;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	background: url(../images/select_arrow.png) no-repeat right #0668b2;
+	padding: 5px 25px 5px 10px;
+}
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0
+}
+.loginwrappage, .inside_wrap, .wrapper, .bannerwrap, .investmentwrap, .calculatorwrap, .aboutwrap, .referralwrap, .registeredwrap, .security, .offerwrap, .achivementwrap, .footerpaymentwrap, .footerwrap {
+	width: 100%;
+	float: left;
+}
+.graphcs, .graphcs2 {
+	width: 100%;
+	float: left;
+	position: relative
+}
+.particles {
+	background-size: cover;
+	min-height: 820px;
+    background: url(../images/headerparticles.png) no-repeat top center;
+}
+.particles2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	z-index: 9;
+}
+
+
+.content {
+	max-width: 1170px;
+	margin: 0 auto;
+	width: 100%;
+	position: relative;
+	z-index: 99;
+}
+.bannerwrap {
+	background: url(../images/sliderbg2.jpg) no-repeat top center;
+	color: #fff;
+	background-size: cover;
+	min-height: 820px;
+}
+
+
+.bannerwrap2 {
+	background: url(../images/bg-right.png) no-repeat top center;	
+    width: 100%;
+    float: left;
+    position:relative;
+    	min-height: 820px;
+}
+
+.animate1 {
+    background: url(../images/animate1.png) no-repeat top center;
+    position: absolute;
+    top: 150px;
+    right: 332px;
+    width: 447px;
+    height: 338px;
+    	animation: bounce 5s infinite;
+	-webkit-animation: bounce 5s infinite;
+	-moz-animation: bounce 5s infinite;
+	-o-animation: bounce 5s infinite;
+}
+
+.animate2 {
+    background: url(../images/animate2.png) no-repeat top center;
+    position: absolute;
+    top: 210px;
+    right: 190px;
+    width: 247px;
+    height: 247px;
+    animation: pulse 5s infinite;
+    -webkit-animation: pulse 5s infinite;
+    -moz-animation: pulse 5s infinite;
+    -o-animation: pulse 5s infinite;
+}
+
+.animate3 {
+    background: url(../images/animate3.png) no-repeat top center;
+    position: absolute;
+    top: 140px;
+    right: 110px;
+    width: 472px;
+    height: 158px;
+    animation: pulse 5s infinite;
+    -webkit-animation: pulse 5s infinite;
+    -moz-animation: pulse 5s infinite;
+    -o-animation: pulse 5s infinite;
+}
+
+.animate4 {
+    background: url(../images/animate4.png) no-repeat top center;
+    position: absolute;
+    top: 320px;
+    right: 440px;
+    width: 513px;
+    height: 392px;
+    animation: bounce 5s infinite;
+    -webkit-animation: bounce 6s infinite;
+    -moz-animation: bounce 5s infinite;
+    -o-animation: bounce 5s infinite;
+}
+
+.topaction {
+	background: #0b305de3;
+	padding: 6px 0;
+	width: 100%;
+	float: left;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+.topaction .left {
+	width: 70%;
+	float: left;
+}
+.topaction .values {
+	float: left;
+	padding: 0 15px 0 0;
+}
+.topaction .values span.icon, .servertime span.icon {
+	display: inline-block;
+	padding: 0 10px 0 0
+}
+.topaction .values strong, .servertime strong {
+	color: #f5be20;
+}
+.topaction .right {
+	width: 30%;
+	float: left;
+	text-align: right;
+}
+.servertime {
+}
+.navwrap {
+	width: 100%;
+	float: left;
+	padding: 30px 0;
+}
+.logo {
+	float: left;
+	width: 20%;
+}
+.menu {
+	width: 80%;
+	float: right;
+	text-align: right;
+	line-height: 34px;
+	padding: 10px 0;
+}
+.menu ul {
+}
+.menu ul li {
+	display: inline-block;
+	padding: 0 5px;
+	margin: 0 0 0 10px;
+}
+.menu ul li a {
+	color: #fff;
+	font-weight: 700;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+.menu ul li a:hover {
+	color: #f5be20
+}
+.menu ul li.login {
+	background: #91c16c;
+	border: 2px solid #91c16c;
+	border-radius: 50px;
+}
+.menu ul li.login:hover, .menu ul li.signup:hover {
+	background: #f5be20
+}
+.menu ul li.login:hover a, .menu ul li.signup:hover a {
+	color: #fff
+}
+.menu ul li.signup {
+	border: 2px solid #fff;
+	border-radius: 50px;
+}
+.menu ul li.login a, .menu ul li.signup a {
+	padding: 0 20px;
+}
+.banner {
+	width: 100%;
+	float: left;
+}
+.banner .left {
+	width: 41%;
+	float: left;
+	padding: 60px 0 0 0;
+}
+.banner .left h1 {
+	margin: 0 0 25px;
+	font-size: 36px;
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 42px;
+}
+.banner .left h1 span {
+	color: #33dcf2;
+}
+.banner .left p {
+	margin: 0 0 35px;
+}
+.banner .left a {
+    background: #f5be20;
+    font-size: 12px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0;
+    line-height: 42px;
+    border-radius: 50px;
+    display: inline-block;
+    width: 160px;
+    text-align: center;
+    margin-right: 8px;
+}
+.banner .left a:hover {
+	background: #91c16c;
+}
+.banner .right {
+	width: 59%;
+	float: left;
+}
+
+
+.bottom-banner {
+	padding:30px 0px;
+}
+
+
+.banner .left .bottom-banner a  {
+    border-radius: 4px;
+    background: #397ec8;
+    width: 190px;
+    line-height: 56px;
+}
+
+.banner .left .bottom-banner a.pp {
+    background: #3da2da;
+}
+
+.banner .left .bottom-banner a img {
+	margin-right:6px;
+}
+
+.investmentwrap {
+	background: #023c78;
+	padding: 50px 0 0;
+	text-align: center;
+	color: #fff;
+}
+.investmentwrap h2 {
+	font-size: 36px;
+	font-weight: 700;
+	margin: 0 0 25px;
+	text-transform: uppercase;
+	color: #fff;
+}
+.investmentwrap h2 span {
+	color: #4db3e8
+}
+.investmentwrap p {
+	font-size: 18px;
+	line-height: 30px;
+	text-align: center;
+	margin: 0 0 30px;
+}
+.planboxwrap {
+	padding: 10px 30px 0 30px;
+	width: 100%;
+	float: left;
+	margin: 0 0 -150px;
+}
+.planbox {
+	width: calc(33.33% - 69px);
+	float: left;
+	margin: 0 34px;
+	background: #0a69a6;
+	border-radius: 15px;
+	padding: 0 20px 10px 20px;
+	position: relative;
+	z-index: 99;
+}
+.plancurve {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 301px;
+	height: 365px;
+	z-index: 9;
+	border-radius: 15px 15px 0 0;
+}
+.plancurve.one {
+	background: url(../images/planbg1.png) no-repeat top center
+}
+.plancurve.two {
+	background: url(../images/planbg2.png) no-repeat top center
+}
+.plancurve.three {
+	background: url(../images/planbg3.png) no-repeat top center
+}
+.planhead {
+	color: #fff;
+	font-size: 24px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding: 30px 0;
+	position: relative;
+	z-index: 99;
+}
+.planpercentage {
+	width: 160px;
+	height: 160px;
+	background: #034770;
+	border-radius: 50%;
+	margin: 0 auto 0 84px;
+	padding: 40px 0;
+	position: relative;
+	z-index: 99;
+}
+.planpercentage .top {
+	font-size: 72px;
+	font-weight: 700;
+	line-height: 50px;
+}
+.planpercentage .top span {
+	font-size: 36px;
+}
+.planpercentage .bottom {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 18px;
+}
+.planinfos {
+	padding: 20px 0 0;
+	width: 100%;
+	float: left;
+}
+.planinfos ul {
+}
+
+::-webkit-input-placeholder { /* Edge */
+  color: #8BC8F5;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color:#8BC8F5;
+}
+
+::placeholder {
+  color: #8BC8F5;
+}
+
+.planinfos ul li {
+	background: #034770;
+	line-height: 44px;
+	border-radius: 50px;
+	margin: 5px 0;
+	text-transform: uppercase;
+	text-align: left;
+	padding: 0 20px 0 30px;
+	font-size: 12px;
+	font-weight: 700;
+}
+.planinfos ul li span {
+	float: right;
+	padding: 0 30px 0 0;
+	background: url(../images/plantick.png) no-repeat right center;
+}
+.planaction {
+	width: 100%;
+	float: left;
+	padding: 15px 0 0;
+	margin: 0 0 -30px 0;
+	text-align: center;
+}
+.planaction a {
+	background: #f5be20;
+	height: 42px;
+	border-radius: 50px;
+	text-align: center;
+	color: #fff;
+	font-weight: 700;
+	display: inline-block;
+	line-height: 42px;
+	text-transform: uppercase;
+	padding: 0 30px;
+}
+.planaction a:hover {
+	background: #91c16c;
+}
+.calculatorwrap {
+	background: #e0ecf9;
+	padding: 220px 0 50px;
+}
+.calculatorbox {
+	width: 100%;
+	float: left;
+	background: #054a77;
+	border-radius: 10px;
+	color: #fff;
+}
+.calculatorbox .left {
+	background: #7db651;
+	float: left;
+	width: 26%;
+	border-radius: 10px 0 0 10px;
+	padding: 40px 30px;
+}
+.calculatorbox .right {
+	width: 74%;
+	float: left;
+	border-radius: 0 10px 10px 0;
+	padding: 21px 10px;
+	background: url(../images/calculatorbg.png) no-repeat center center;
+}
+.calculatorbox .left h4 {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 0 0 0 80px;
+	background: url(../images/calculatoricon.png) no-repeat left center;
+	margin: 0;
+}
+.enteramount {
+	float: left;
+	width: 31%;
+	padding: 0 25px;
+}
+.enteramount label {
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 24px;
+	padding: 8px 0;
+	margin: 0;
+}
+.putfigure {
+	position: relative;
+}
+.putfigure input {
+	height: 54px;
+	padding: 0 65px 0 15px;
+}
+.putfigure .icon {
+	width: 60px;
+	background: #eaad40;
+	border-radius: 0 4px 4px 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 54px;
+	text-align: center;
+}
+.calculatorresults {
+	width: 23%;
+	padding: 0 25px;
+	float: left;
+	text-align: center;
+}
+.calculatorresults .icons {
+	display: inline-block;
+	padding: 0 0 5px;
+}
+.calculatorresults p {
+	margin: 0;
+	font-size: 12px;
+	font-weight: 500;
+	text-align: center;
+	text-transform: uppercase;
+}
+.calculatorresults h4 {
+	margin: 0;
+	font-size: 18px;
+	font-weight: 700;
+}
+.aboutwrap {
+	background: #023c78;
+	padding: 50px 0;
+	color: #fff;
+}
+.aboutthumb {
+	width: 44%;
+	float: left;
+	padding: 0 40px 0 0;
+}
+.abutinfos {
+	width: 56%;
+	float: left;
+}
+.abutinfos h1 {
+	margin: 0 0 15px;
+	font-size: 24px;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+.abutinfos h1 strong {
+	font-weight: 700
+}
+.abutinfos p {
+}
+.abutinfos a {
+	background: #f5be20;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding: 0 30px;
+	border-radius: 50px;
+	line-height: 42px;
+	display: inline-block;
+}
+.abutinfos a:hover {
+	background: #91c16c;
+}
+.referralwrap {
+	background: url(../images/referralbg.jpg) repeat-y top center;
+	color: #fff;
+	padding: 50px 0 210px;
+}
+.referralwrap .left {
+	width: 35%;
+	float: left;
+	padding: 0 40px 0 0;
+}
+.referralwrap .left h4 {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 700;
+	margin: 0 0 20px;
+}
+.referralwrap .left h4 span {
+	color: #f5be20;
+}
+.referralwrap .left p {
+	margin: 0 0 30px;
+}
+.referralwrap .left a {
+	background: #7fc251;
+	line-height: 42px;
+	border-radius: 50px;
+	padding: 0 30px;
+	color: #fff;
+	font-weight: 700;
+	text-transform: uppercase;
+	display: inline-block;
+}
+.referralwrap .left a:hover {
+	background: #f5be20
+}
+.referralwrap .right {
+	width: 65%;
+	float: left;
+}
+.refbox.one {
+	background: url(../images/reficon1.png) no-repeat center center;
+}
+.refbox.two {
+	background: url(../images/reficon2.png) no-repeat center center;
+}
+.refbox.three {
+	background: url(../images/reficon3.png) no-repeat center center;
+}
+.refbox {
+	width: 33.33%;
+	float: left;
+	text-align: center;
+	padding: 60px 10px;
+	min-width: 225px;
+	min-height: 219px;
+}
+.refbox h3 {
+	font-size: 60px;
+	font-weight: 700;
+	margin: 0;
+}
+.refbox h3 span {
+	font-size: 36px;
+}
+.refbox p {
+	text-align: center;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 0;
+}
+.registeredwrap {
+	background: #e0ecf9;
+}
+.registeredbox {
+	background: #fff;
+	border-radius: 30px;
+	box-shadow: 0 0 5px #00000061;
+	padding: 35px;
+	width: 100%;
+	float: left;
+	margin: -150px 0 0 0;
+}
+.registeredbox .left {
+	width: 34%;
+	float: left;
+}
+.registeredbox .right {
+	width: 66%;
+	float: left;
+	background: url(../images/certificatebg.png) no-repeat center center #114a88;
+	border-radius: 4px;
+	padding: 15px 50px 0;
+}
+.registeredbox .left h4 {
+	font-size: 20px;
+	line-height: 24px;
+	margin: 15px 0 30px;
+	color: #0e4681;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.registeredbox .left h4 span {
+	color: #3aa4d7;
+}
+.registeredbox .left p.regaddress, .registeredbox .left p.regemail {
+	padding: 0 0 0 40px;
+	color: #435469;
+	margin: 0 0 5px;
+}
+.registeredbox .left p.regaddress {
+	background: url(../images/emailicon.png) no-repeat left center;
+}
+.registeredbox .left p.regemail {
+	background: url(../images/locationicon.png) no-repeat left center;
+	margin: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.certificateth {
+	width: 50%;
+	float: left;
+	padding: 10px;
+	border-radius: 6px 6px 0 0;
+	text-align: center;
+	background: #fff;
+}
+.certificateaction {
+	float: left;
+	width: 50%;
+	text-align: center;
+	padding: 30px;
+}
+.certificateaction a.viewcompinfo {
+	display: block;
+	line-height: 50px;
+	background: #3aa2d8;
+	border-radius: 50px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin: 10px 0;
+}
+.certificateaction a.viewcompinfo:hover {
+	background: #f5be20;
+}
+.certificateaction a.viewcert {
+	display: block;
+	line-height: 50px;
+	background: #f5be20;
+	border-radius: 50px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin: 10px 0;
+}
+.certificateaction a.viewcert:hover {
+	background: #3aa2d8;
+}
+.security {
+	padding: 50px 0;
+	text-align: center;
+}
+.security h2 {
+	margin: 0 0 30px;
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #0e4681;
+}
+.security h2 span {
+	color: #3aa2d8;
+}
+.securitybox {
+	width: 24%;
+	margin: 0 3px;
+	float: left;
+	text-align: center;
+	border-radius: 4px;
+}
+.securitybox.one {
+	background: #3aa2d8;
+}
+.securitybox.two {
+	background: #81bd48;
+}
+.securitybox.three {
+	background: #255182;
+}
+.securitybox.four {
+	background: #f5be20;
+}
+.securitybox.five {
+	background: #0b305d;
+}
+.securitybox.six {
+	background: #0885c5;
+}
+.offerwrap {
+	background: url(../images/investorsbg.png) no-repeat center center #0b305d;
+	padding: 30px 0;
+	color: #fff;
+	text-align: center
+}
+.offerwrap h2 {
+	font-size: 36px;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin: 0 0 30px;
+}
+.offerwrap h2 span {
+	font-weight: 700
+}
+.offerbox {
+	width: 33.33%;
+	float: left;
+	text-align: center;
+	padding: 0 24px;
+}
+.offerbox .icon {
+	display: inline-block;
+	padding: 0 0 25px;
+}
+.offerbox h3 {
+	color: #f5be20;
+	font-size: 16px;
+	text-transform: uppercase;
+	margin: 0 0 10px;
+	font-weight: 600;
+}
+.offerbox p {
+	text-align: center;
+	margin: 0;
+}
+.achivementwrap {
+	background: #ffffff url(../images/achivementbg.png) no-repeat bottom center;
+	text-align: center;
+	padding: 50px 0;
+}
+.achivementwrap h2 {
+	font-size: 36px;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin: 0 0 30px;
+	color: #0b305d;
+}
+.achivementwrap h2 span {
+	font-weight: 700;
+}
+.statwrap {
+	width: 100%;
+	float: left;
+	border-radius: 30px 30px 0 0;
+	color: #fff;
+}
+.statbox.one {
+	background: #36abd2;
+	border-radius: 30px 0 0 0;
+}
+.statbox.two {
+	background: #94d853;
+}
+.statbox.three {
+	background: #3070b7;
+}
+.statbox.four {
+	background: #edb616;
+	border-radius: 0 30px 0 0;
+}
+.statbox {
+	width: 25%;
+	float: left;
+	padding: 29px;
+	text-align: left;
+}
+.statbox .icon {
+	float: left;
+	width: 24%;
+	padding: 0 10px 0 0;
+}
+.statbox .infos {
+	width: 76%;
+	float: left;
+}
+.statbox h4 {
+	margin: 0;
+	font-size: 18px;
+	font-weight: 700;
+}
+.statbox p {
+	margin: 0;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.achivementbox {
+	width: 100%;
+	float: left;
+	color: #fff;
+	text-align: left;
+}
+.achivementbox .left {
+	background: #082d56;
+	padding: 25px;
+	border-radius: 0 0 0 25px;
+	width: 50%;
+	float: left;
+}
+.achivementbox .right {
+	background: #083362;
+	padding: 25px;
+	border-radius: 0 0 25px 0;
+	width: 50%;
+	float: left;
+}
+.achivementbox h4 {
+	font-size: 18px;
+	margin: 0 0 20px;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+.achivementbox h4 strong {
+	font-weight: 700
+}
+.achivementbox ul {
+width: 50%;
+    float: left;
+    background: #153d69;
+    border: 1px solid #28517e;
+    margin: 1px 0 0;
+    line-height: 44px;
+    font-size: 12px;
+}
+.achivementbox ul li {
+	padding: 0 5px;
+	float: left;
+	height: 46px;
+	overflow:hidden;
+}
+.achivementbox ul li:last-child {
+	color: #1db8eb;
+	float: right
+}
+.footerpaymentwrap {
+	background: #fff;
+	padding: 20px 0;
+	text-align: center;
+}
+.footerwrap {
+	background: #0e4681;
+	color: #fff;
+	padding: 35px 0;
+}
+.copyright {
+	width: 30%;
+	float: left;
+}
+.copyright p {
+	text-align: left;
+	margin: 0 0 10px;
+	font-size: 12px;
+	font-weight: 500;
+}
+.footerlistings {
+	width: 20%;
+	float: left;
+}
+.footerlistings ul {
+}
+.footerlistings ul li {
+}
+.footerlistings ul li a {
+	color: #fff;
+	font-size: 12px;
+	text-transform: uppercase;
+	line-height: 24px;
+	font-weight: 500;
+	display: block;
+}
+.footerlistings ul li a:hover {
+	color: #f5be20;
+}
+.footeradress {
+	width: 30%;
+	float: left;
+}
+.footeradress .address, .footeradress .email {
+	margin: 0 0 10px;
+	padding: 0 0 0 46px;
+}
+.footeradress .address {
+	background: url(../images/footerlocationicon.png) no-repeat left center;
+}
+.footeradress .email {
+	background: url(../images/footeremailicon.png) no-repeat left center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+
+.sectionfld {
+	float:left;
+	width:40%;
+}
+
+.sectionfld  select {
+	width:95%;
+}
+
+.sectionfld-last {
+	float:right;
+	width:20%;
+}
+
+.sectionfld-last input {
+	width:100%;
+}
+
+@media (max-width: 1170px) {
+.loginwrappage, .inside_wrap, .wrapper, .bannerwrap, .investmentwrap, .calculatorwrap, .aboutwrap, .referralwrap, .registeredwrap, .security, .offerwrap, .achivementwrap, .footerpaymentwrap, .footerwrap {
+	width: 1170px;
+}
+.content {
+	margin: 0 !important;
+}
+
+.animate1, .animate2, .animate3 {
+	right:0px;
+}
+
+.animate4 {
+	    top: 380px;
+    right: 120px;
+}
+}
+.bannerwrap.insideheaders {
+	min-height: auto;
+	border-bottom: 4px solid #f5be20;
+}
+.bannerwrap.insideheaders .banner .left {
+	padding: 20px 0;
+}
+.bannerwrap.insideheaders .banner .left h1 {
+	font-size: 30px
+}
+.aboutwrap.aboutpage {
+	padding: 50px 0 190px;
+}
+.registeredwrap.aboutpage {
+	padding: 0 0 30px 0;
+}
+.aboutwrap.aboutpage h1 {
+	color: #f5be20;
+}
+.vissionmission {
+	width: 100%;
+	float: left;
+	padding: 40px 0 0 0;
+}
+.vissionmission .left, .vissionmission .right {
+	width: 48%
+}
+.vissionmission .left {
+	float: left;
+}
+.vissionmission .right {
+	float: right;
+}
+.vissionmission .left h3, .vissionmission .right h3 {
+	margin: 0 0 20px;
+	font-size: 22px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #0e4681;
+}
+.inside_wrap {
+	padding: 40px 0
+}
+.featuresbox {
+	width: 100%;
+	float: left;
+	margin: 15px 0;
+	padding: 25px 20px 15px;
+	border-radius: 6px;
+	color: #fff;
+}
+.featuresbox .icon {
+	width: 17%;
+	float: left;
+}
+.featuresbox .infos {
+	width: 83%;
+	float: left;
+}
+.featuresbox .infos h3 {
+	font-weight: 600;
+	margin: 20px 0 15px;
+	font-size: 20px;
+}
+.featuresbox.one {
+	background: #3aa2d8;
+}
+.featuresbox.two {
+	background: #81bd48;
+}
+.featuresbox.three {
+	background: #255182;
+}
+.featuresbox.four {
+	background: #f5be20;
+}
+.featuresbox.five {
+	background: #0b305d;
+}
+.featuresbox.six {
+	background: #0885c5;
+}
+.referralwrap.affiliatepage {
+	padding: 50px 0;
+}
+.security p {
+	text-align: center
+}
+.example {
+	border: 4px dashed #336dac;
+	border-radius: 40px;
+	padding: 30px 20px 10px;
+	background: #3aa2d8;
+	color: #fff;
+}
+.example h4 {
+	font-size: 22px;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin: 0 0 15px;
+}
+.calculatorwrap.investmentpage {
+	padding: 50px 0;
+}
+.investmentwrap.investmentpage .planboxwrap {
+	margin: 0 0 70px;
+}
+.news_block {
+	background: #0a69a6;
+	margin: 15px 0;
+	width: 100%;
+	float: left;
+	color: #fff;
+}
+.news_title {
+	background: #034770 url(../images/newsarticle.png) no-repeat left 10px center;
+	color: #fff;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: 10px 15px 10px 55px;
+	border-radius: 6px 6px 0 0;
+	font-size: 20px;
+	line-height: 36px;
+}
+.news_infos {
+	width: 100%;
+	float: left;
+	padding: 15px;
+}
+.news_time {
+	width: 100%;
+	float: left;
+	background: #5ea9cf url(../images/newstime.png) no-repeat left 10px center;
+	padding: 10px 15px 10px 35px;
+	font-size: 12px;
+	text-align: left;
+}
+.faq .panel {
+	border: none;
+	background: #fff;
+	box-shadow: 0 0 0 0;
+}
+.faq .panel-default > .panel-heading {
+	color: #435469;
+	background: none;
+	border: none;
+	padding: 0 0 0 55px;
+	background: url(../images/help.png) no-repeat left 15px center;
+}
+.faq .panel-default > .panel-heading + .panel-collapse > .panel-body {
+	border-top-color: #393f7d;
+	color: #595959;
+}
+.faq .nav-tabs > li.active > a, .faq .nav-tabs > li.active > a:focus, .faq .nav-tabs > li.active > a:hover {
+	color: #fff;
+	background: #f5be20 !important;
+	border: none;
+}
+.faq .nav-tabs {
+	margin: 0 0 25px;
+	border: none;
+}
+.faq .nav-tabs > li > a {
+	background: rgb(11, 51, 99);
+	border-radius: 2px;
+	text-align: center;
+	color: #fff;
+	font-weight: 500;
+	line-height: 44px;
+	display: inline-block;
+	padding: 0 10px;
+	text-transform: uppercase;
+	margin-right: 0;
+	border: none;
+	font-size: 12px;
+}
+.faq .nav > li {
+	margin: 0 5px 0 0;
+}
+.faq .panel-title > .small, .faq .panel-title > .small > a, .faq .panel-title > a, .faq .panel-title > small, .faq .panel-title > small > a {
+	color: inherit;
+	display: block;
+	padding: 15px 0;
+	font-size: 15px;
+}
+.supportform {
+	padding: 0 0 0 40px;
+}
+.supportform table td {
+	padding: 6px;
+}
+.inside_wrap.rules h3 {
+	font-size: 18px;
+	font-weight: 600;
+	color: #044481;
+	margin: 20px 0 10px;
+}
+.loginwrappage {
+	width: 100%;
+	float: left;
+}
+.form-container.login {
+	background: #0b2c55;
+	border-radius: 4px;
+	max-width: 540px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.footerwrap.loginpages {
+	background: transparent;
+}
+.footerwrap.loginpages p {
+	text-align: center;
+	margin: 0 0 10px;
+	color: #0b2c55;
+}
+.footerwrap.loginpages a {
+	color: #0b2c55;
+	font-size: 12px;
+	margin: 0 5px;
+}
+.loginheaders {
+	padding: 20px;
+	border-radius: 4px 4px 0 0;
+	width: 100%;
+	float: left;
+}
+.loginheaders .left {
+	width: 30%;
+	float: left;
+}
+.loginheaders .right {
+	width: 70%;
+	float: left;
+	text-align: right;
+	line-height: 38px;
+	font-size: 13px;
+	color: #fff;
+}
+.loginheaders .right a {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.loginheaders.onlylogin {
+    background: #0D519A;
+}
+.loginheaders.onlysignup {
+	background: #255182;
+}
+.loginheaders.onlyforget {
+	background: #0885c5;
+}
+.form-container.login table td {
+	padding: 6px;
+	text-align: center;
+}
+.forg, .iagree {
+	text-align: center;
+	border-top: 1px solid #f5be20;
+	color: #f5be20;
+	font-size: 12px;
+	line-height: 40px;
+	margin: 25px 0 0 0;
+	text-transform: capitalize;
+}
+.forg a, .iagree a {
+	color: #f5be20;
+}
+.forg a:hover {
+	color: #fff;
+}
+.form-container.login form {
+	width: 100%;
+	float: left;
+	padding: 20px;
+}
+.form-container.login form .head {
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+	margin: 10px 0 20px;
+	font-size: 18px;
+}
+.redirectwrap {
+	width: 500px;
+	margin: 100px auto;
+	background: #edb616;
+	border-radius: 30px;
+	padding: 40px 20px 20px;
+	text-align: center;
+	color: #fff;
+}
+.redirectwrap h4 {
+	color: #083362;
+	font-size: 26px;
+	text-transform: uppercase;
+	margin: 0 0 25px;
+	font-weight: 600;
+}
+.redirectwrap h5 {
+	text-transform: capitalize;
+	font-size: 16px;
+	font-weight: 400;
+}
+.redirect {
+	background: #083362;
+}
+.accountheader {
+    width: 100%;
+    float: left;
+    margin: 50px 0 0 0;
+    background: #1055A0;
+    padding: 15px;
+    border-radius: 4px 4px 0 0;
+}
+.accountheader .left {
+	float: left;
+	width: 25%;
+}
+.accountheader .right {
+	float: left;
+	width: 75%;
+	text-align: right;
+}
+.membersidebar {
+	width: 25%;
+	float: left;
+	padding: 20px;
+	background: #0b2c57;
+	height: 100%;
+}
+.myaccount {
+	width: 75%;
+	float: left;
+	padding: 20px;
+}
+.memberwrap {
+	width: 100%;
+	float: left;
+	background: #023c78;
+	color: #fff;
+	border-radius: 0 0 4px 4px;
+}
+.accountheader .right ul li {
+	display: inline-block;
+	text-transform: uppercase;
+}
+.accountheader .right ul li a {
+	font-weight: 600;
+	font-size: 12px;
+	color: #fff;
+	padding: 35px 5px 0px 5px;
+	display: block;
+}
+.accountheader .right ul li a:hover {
+	color:#f5be20;
+}
+.accountheader .right ul li.one {
+	background: url(../images/accountheader1.png) no-repeat center top;
+}
+.accountheader .right ul li.two {
+	background: url(../images/accountheader2.png) no-repeat center top;
+}
+.accountheader .right ul li.three {
+	background: url(../images/accountheader3.png) no-repeat center top;
+}
+.accountheader .right ul li.four {
+	background: url(../images/accountheader4.png) no-repeat center top;
+}
+.accountheader .right ul li.five {
+	background: url(../images/accountheader5.png) no-repeat center top;
+}
+.accountheader .right ul li.six {
+	background: url(../images/accountheader6.png) no-repeat center top;
+}
+.accountheader .right ul li.seven {
+	background: url(../images/accountheader7.png) no-repeat center top;
+}
+.accountheader .right ul li.eight {
+	background: url(../images/accountheader8.png) no-repeat center top;
+}
+.accountheader .right ul li.nine {
+	background: url(../images/accountheader9.png) no-repeat center top;
+}
+
+.accountheader .right ul li.ten {
+	background: url(../images/accountheader10.png) no-repeat center top;
+}
+
+.balance-inner {
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px;
+    border: 1px solid white;
+    padding: 0px 5px;
+}
+
+ .accbalbottom  .balance-inner span {
+    float: none;
+    font-size: 12px;
+    padding-left: 5px;
+    font-weight: bold;
+}
+
+ .accbalbottom p {
+	background:#0A69A6;
+	padding:10px 20px;
+	border-radius:6px;
+ }
+
+.welcomebox, .regdate, .lastaccess, .asidereferral {
+	text-align: center;
+	padding: 10px;
+	margin: 0 0 10px;
+}
+.welcomebox {
+	background: #8acf42;
+}
+.regdate {
+	background: #3aced8;
+}
+.lastaccess {
+	background: #fabd4e;
+}
+.asidereferral {
+	background: #255182;
+}
+.welcomebox .icon {
+	display: inline-block;
+	width: 64px;
+	height: 64px;
+	margin: 0 0 10px;
+}
+.regdate .icon, .lastaccess .icon, .asidereferral .icon {
+	display: inline-block;
+	width: 38px;
+	height: 38px;
+	margin: 0 0 10px;
+}
+.welcomebox h4, .regdate h4, .lastaccess h4, .asidereferral h4 {
+	text-transform: uppercase;
+	font-size: 16px;
+	margin: 0;
+}
+.regdate p, .lastaccess p, .asidereferral p {
+	text-align: center;
+	font-weight: 600;
+	margin: 0 0 5px;
+}
+.asidereferral a {
+	display: inline-block;
+	padding: 0 35px;
+	margin: 15px 0 10px 0;
+	background: #f5be20;
+	border-radius: 50px;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 34px;
+}
+.asidereferral a:hover {
+	background: #91c16c;
+}
+.member_right {
+	width: 100%;
+	float: left;
+}
+.affiliatelink {
+	padding: 15px;
+	background: #f5be20;
+	margin: 0 0 20px;
+	overflow: hidden;
+}
+.affiliatelink span {
+	float: left;
+	padding: 0 15px 0 0;
+	line-height: 40px;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 13px;
+}
+#ref-link {
+	float: left;
+	width: 79%;
+	padding: 0 0 0 50px;
+	background: #0668b2 url(../images/reflinkicon.png) no-repeat left 14px center
+}
+.accbal .left, .accbal .right {
+	width: 49%;
+	padding: 25px 10px 25px 90px;
+}
+.accbal .left {
+	float: left;
+	background: #0b2c57 url(../images/accbalicon1.png) no-repeat left 12px center;
+}
+.accbal .right {
+	float: right;
+	background: #0b2c57 url(../images/accbalicon2.png) no-repeat left 12px center;
+}
+.accbal .left.are {
+	float: left;
+	background: #0b2c57 url(../images/accbalicon1are.png) no-repeat left 12px center;
+}
+.accbal .right.tre {
+	float: right;
+	background: #0b2c57 url(../images/accbalicon2tre.png) no-repeat left 12px center;
+}
+.accbal .left h3, .accbal .right h3 {
+	font-size: 15px;
+	margin: 0;
+	line-height: 26px;
+	float: left;
+}
+.accbal .left h3 span, .accbal .right h3 span, .refheader {
+	display: block;
+	font-size: 20px;
+	font-weight: 600;
+	color: #fecf4b;
+	text-transform: uppercase;
+}
+.accbal .left a, .accbal .right a {
+    float: right;
+    display: inline-block;
+    padding: 0 18px;
+    margin: 0 0 0 10px;
+    background: #91c16c;
+    border-radius: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 32px;
+}
+.accbal .left a:hover, .accbal .right a:hover {
+	background: #f5be20;
+}
+.accbal, .detailed-stats-box-wrap, .accstat {
+	width: 100%;
+	float: left;
+	margin: 0 0 20px;
+}
+.detailed-stats-box, .editacc_top {
+	width: 49%;
+	background: #3aa2d8;
+}
+.detailed-stats-box.left, .editacc_top.left {
+	float: left;
+}
+.detailed-stats-box.right, .editacc_top.right {
+	float: right;
+}
+.detailed-stats-box h3, .editacc_top h3 {
+	background: #0b2c57;
+	margin: 0;
+	padding: 24px 15px 24px 65px;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.detailed-stats-box.left h3 {
+	background: #0b2c57 url(../images/detailedstat1.png) no-repeat left 12px center;
+}
+.detailed-stats-box.right h3 {
+	background: #0b2c57 url(../images/detailedstat2.png) no-repeat left 12px center;
+}
+.securityacc.left h3 {
+	background: #0b2c57 url(../images/securityacc1.png) no-repeat left 12px center;
+}
+.securityacc.right h3 {
+	background: #0b2c57 url(../images/securityacc2.png) no-repeat left 12px center;
+}
+.editacc_top.left h3 {
+	background: #0b2c57 url(../images/editacc_top1.png) no-repeat left 12px center;
+}
+.editacc_top.right h3 {
+	background: #0b2c57 url(../images/editacc_top2.png) no-repeat left 12px center;
+}
+.detailed-stats-box h4 {
+	padding: 20px 15px;
+	font-size: 15px;
+	font-weight: 600;
+	margin: 0;
+	background: #3288b4;
+}
+.detailed-stats-box h4 span {
+	float: right;
+}
+.detailed-stats-box .info ul, .editacc_top ul {
+	padding: 0 15px 15px;
+}
+.detailed-stats-box .info ul li, .editacc_top ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #fff;
+    text-align: left;
+    width: 100%;
+    float: left;
+    line-height: 42px;
+}
+.detailed-stats-box .info ul li .radio {
+	float: left;
+	margin: 6px 10px 0 0;
+}
+.detailed-stats-box.securityacc {
+	min-height: 252px;
+}
+.detailed-stats-box .info ul li:last-child, .editacc_top ul li:last-child {
+	border: none
+}
+.editacc_top .info {
+	min-height: 280px;
+}
+.editacc_top ul li input.inpts {
+	max-width: 200px;
+}
+.editacc_top .info .sbmtspl {
+	margin: 0 15px;
+}
+.detailed-stats-box .info ul li span, .editacc_top ul li span {
+	float: right;
+}
+.accstatbox {
+    float: left;
+    width: 33.33%;
+    padding: 15px 0 0 15px;
+    border: 1px solid #0A5098;
+}
+.accstatbox span.icon {
+	width: 64px;
+	height: 64px;
+	float: left;
+	padding: 0 15px 0 0;
+}
+.accstatbox p {
+	margin: 0;
+	text-transform: capitalize;
+}
+.accstatbox h4 {
+	margin: 5px 0 0px;
+	font-size: 16px;
+	font-weight: 600;
+	color: #fecf4b;
+}
+.my_accont {
+	padding: 0 0 20px;
+	width: 100%;
+	float: left;
+}
+.my_accont table td.inheader, .paidoutbottom_table td.inheader {
+	color: #ffce43;
+	border-bottom: 1px solid #ffce43;
+	font-weight: 600;
+	text-transform: uppercase;
+	line-height: 40px;
+}
+.my_accont table td, .my_accont table th, .paidoutbottom_table td {
+    border-bottom: 1px dashed #d9edf757;
+    padding: 5px;
+    font-size: 13px;
+    color:white;
+}
+.alert {
+	text-align: center;
+}
+
+.paidouttop {
+	padding-bottom:0px;
+}
+
+.paidoutbottom_table {
+	background:#0B4E94;
+	border-radius:10px;
+	padding:20px;
+}
+
+.deposit_text, .acc_leftfromto, .accbalbottom {
+	padding: 15px;
+	background: #7fc251;
+	margin: 0 0 20px;
+	overflow: hidden;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 13px;
+	border-radius: 4px
+}
+.deposit_text span, .accbalbottom span {
+	float: right;
+	font-weight: 600;
+	font-size: 18px;
+}
+.acc_leftfromto h3 {
+	margin: 0 0 15px;
+	font-size: 18px;
+	font-weight: 600;
+}
+.depositplans .planbox {
+	margin: 0 5px;
+	width: calc(33.33% - 10px);
+}
+.depositplans .planpercentage {
+	margin: 0 auto 0 40px;
+	text-align: center;
+}
+.depositplans .plancurve {
+	width: 270px;
+}
+.depositplans {
+	width: 100%;
+	float: left;
+	padding: 0 0 50px;
+}
+.accinvestbottom {
+	background: #255182;
+	padding: 15px;
+	border-radius: 4px;
+	text-align: center;
+	margin: 0 0 20px;
+}
+.accinvestbottom h3, .accinvestmid h3 {
+	color: #f5be20;
+	text-transform: uppercase;
+	font-weight: 600;
+	margin: 0 0 10px;
+	font-size: 18px;
+	text-align: center
+}
+.deposit-process {
+	padding: 15px;
+	border-radius: 4px;
+	background: #0b2c57;
+}
+.amount-deposit {
+	margin: 0 0 15px;
+}
+.calculator-deposit {
+	margin: 0;
+	font-size: 12px;
+	font-weight: 500;
+	text-align: center;
+	text-transform: uppercase;
+}
+.calculator-deposit ul li {
+}
+.calculator-deposit ul li span {
+	margin: 0;
+	font-size: 18px;
+	font-weight: 700;
+	display: block;
+}
+.accinvestmid {
+	background: #255182;
+	border-radius: 4px;
+	padding: 15px;
+	width: 100%;
+	float: left;
+}
+.accinvestmid ul li {
+	width: 100%;
+	min-height: 40px;
+	line-height: 40px;
+	text-transform: capitalize;
+}
+.accinvestmid ul li.invest-title {
+    border-bottom: 1px dashed #3f71a9;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #7ac4fb;
+
+}
+
+.payment-container {
+    background: #0668B2;
+    display: inline-block;
+    padding: 3px 2px 3px 5px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    margin: 3px 2px 6px 10px;
+}
+
+
+.payment-container input {
+	display:inline;
+	margin:0px 5px;
+}
+
+.depbutton {
+	width: 100%;
+	float: left;
+	text-align: center;
+	padding: 25px 0 0 0;
+}
+.depositplans .planbox .radio {
+	display: inline-block;
+	width: 160px;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 0;
+	cursor: pointer;
+	line-height: 44px;
+	border: none;
+	height: 44px;
+	border-radius: 50px;
+	background: #8acf42;
+	color: #fff;
+	margin: 0;
+}
+.depositplans .planbox input[type=radio] {
+	display: none
+}
+.depositplans .planbox input[type="radio"]:checked + .radio {
+	background: #f5be20;
+	color: #fff;
+}
+
+.confirmation-form {
+	background:#0B2C57;
+	padding:20px;
+	width:537px;
+	margin:20px auto;
+}
+
+.confirmation-form table {
+	width:100%;
+}
+
+.confirmation-form h3 {
+    margin-top: 0px;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+    line-height: 48px;
+    background: #3aced8;
+    font-weight: 700;
+}
