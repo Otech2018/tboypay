@@ -5,7 +5,7 @@
 
 if( !loggedin() ){
 
-    echo "<script> window.location.replace(\"../login.html\"); </script>";
+    echo "<script> window.location.replace(\"../login.php\"); </script>";
   }
 
 ?>

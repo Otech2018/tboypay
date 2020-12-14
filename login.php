@@ -46,7 +46,7 @@ if(isset($_POST['log_btn'])){
               $_SESSION['user_id'] = $user_id;
                 
              
-                  echo "<script> window.location.replace(\"../account/dashboard.php\"); </script>";
+                  echo "<script> window.location.replace(\"account/dashboard.php\"); </script>";
                   
               }
               
@@ -235,7 +235,7 @@ function googleTranslateElementInit() {
                                                <div class="login-form"> 
                         <form class="form-horizontal" method="POST" action="">
 
-                            <input type="text" name="email" id="username" required placeholder="Enter your Username or Email"/>     
+                            <input type="email" name="email" id="username" required placeholder="Enter your Email"/>     
                             <input type="password" name="password" id="password" required placeholder="Enter your Password"/>
 
                            <input value="Login" name="log_btn" type="submit">
