@@ -1,0 +1,14 @@
+@import 'https://fonts.googleapis.com/css?family=Rubik:300,400,500,700';
+@import "../../assets/vendors/bootstrap/css/bootstrap.min.html";
+@import "../../assets/vendors/perfect-scrollbar/css/perfect-scrollbar.html";
+@import "../../assets/css/basic.html";
+@import "../scss/icons/font-awesome/css/font-awesome.min.css";
+@import "../scss/icons/simple-line-icons/css/simple-line-icons.css";
+@import "../scss/icons/weather-icons/css/weather-icons.min.css";
+@import "../scss/icons/iconmind/iconmind.css";
+@import "../scss/icons/themify-icons/themify-icons.css";
+@import "../scss/icons/flag-icon-css/flag-icon.min.css";
+@import "../scss/icons/material-design-iconic-font/css/materialdesignicons.min.css";
+@import "spinners.css";
+@import "animate.css";
+@import "style.css";

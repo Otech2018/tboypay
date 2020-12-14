@@ -202,7 +202,7 @@ $value = $quantity / $result;
 
 <img src="../assets/home/images/tivo.png" style="width:70px;" class="light-logo" alt="homepage" /></span> </a>
 </div>
-
+  
 
 
 <div class="navbar-collapse">
