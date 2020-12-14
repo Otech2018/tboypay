@@ -10,6 +10,7 @@ if (isset($_POST['reg_btn'])){
 	 $ref_email1 = addslashes(htmlentities($_POST['ref_email']));
 	 $email = addslashes(htmlentities($_POST['email']));
 	 $password = addslashes(htmlentities($_POST['password']));
+	 $user_phone = addslashes(htmlentities($_POST['user_phone']));
 	 $password_confirmation = addslashes(htmlentities($_POST['password_confirmation']));
 	
 	 
@@ -29,30 +30,30 @@ if (isset($_POST['reg_btn'])){
 													$query_runaa  =new run_query($queryss);
 											if( $query_runaa->num_rows == 0){
 
-															echo "<script>alert(\"Invalid Referral  !!! Please Check the Referral or leave it blank\"); window.location.replace(\"../register.html\"); </script>";
+															echo "<script>alert(\"Invalid Referral  !!! Please Check the Referral or leave it blank\"); window.location.replace(\"register.php\"); </script>";
 													}else{
 											$user_ref_data =	$query_runaa->result();
 										extract($user_ref_data );		
 													
-						 $query211 = new run_query("INSERT into user_ref set user_ref_email='$name', gen1_email='$ref_email1', reg_date='$reg_Date', gen2_email='$gen1_email',gen3_email='$gen2_email' " );
+						 $query211 = new run_query("INSERT into user_ref set user_ref_email='$name', gen1_email='$ref_email1',  reg_date='$reg_Date', gen2_email='$gen1_email',gen3_email='$gen2_email' " );
 						 
-																	$query21 =  "INSERT into users set  user_name='$name', fullname='$fullname', user_password='$password',  user_email='$email',     reg_date='$reg_Date', user_referrer='$ref_email1', user_ref_bonus='0', user_status='Active' ";
+																	$query21 =  "INSERT into users set  user_name='$name', user_phone='$user_phone', fullname='$fullname', user_password='$password',  user_email='$email',     reg_date='$reg_Date', user_referrer='$ref_email1', user_ref_bonus='0', user_status='Active' ";
 														
 																	 $query_runer =new run_query($query21) ;
 																	
-																				echo "<script>alert(\"Account Registered Successfully!!! Its Now Time TO LogIn\"); window.location.replace(\"../login.html\"); </script>";
+																				echo "<script>alert(\"Account Registered Successfully!!! Its Now Time TO LogIn\"); window.location.replace(\"login.php\"); </script>";
 													}
 											} else{     //check and credit referrer email ends
-														$query21 =  "INSERT into users set  user_name='$name', user_password='$password', fullname='$fullname',  user_email='$email',   reg_date='$reg_Date', user_referrer='$ref_email1', user_status='Active', user_ref_bonus='0'  ";
+														$query21 =  "INSERT into users set  user_name='$name', user_password='$password', user_phone='$user_phone', fullname='$fullname',  user_email='$email',   reg_date='$reg_Date', user_referrer='$ref_email1', user_status='Active', user_ref_bonus='0'  ";
 															 $query211 = new run_query("INSERT into user_ref set user_ref_email='$name'  " );
 															
 															 
 																	if( $query_runer =new run_query($query21) ) {
 
 
-																		$site_email_send = "info@KretoInvestment.com";		
+																		$site_email_send = $site_email;		
 $welcome_email_subject = "Welcome to $site_name";
-$welcome_email_headers .= "Content-type:text/html;charset=UTF-8 \r\n";
+$welcome_email_headers = "Content-type:text/html;charset=UTF-8 \r\n";
 $welcome_email_headers .= "From: $site_name";	
 
 
@@ -91,10 +92,10 @@ mail($email,$welcome_email_subject,$welcome_email_body,$welcome_email_headers);
 																	
 															
 																		
-																			echo "<script>alert(\"Account Registered Successfully!!! Its Now Time TO LogIn\"); window.location.replace(\"../login.html\"); </script>";
+																			echo "<script>alert(\"Account Registered Successfully!!! Its Now Time TO LogIn\"); window.location.replace(\"login.html\"); </script>";
 
 														}else{
-																echo "<script>alert(\"An Error Occurred Please Try Again \"); window.location.replace(\"../register.php\"); </script>";
+																echo "<script>alert(\"An Error Occurred Please Try Again \"); window.location.replace(\"register.php\"); </script>";
 																} 
 																
 													}
@@ -102,12 +103,12 @@ mail($email,$welcome_email_subject,$welcome_email_body,$welcome_email_headers);
 							
 					}else{
 
-							echo "<script>alert(\"Username or Email Already Exits \"); window.location.replace(\"../register.php\"); </script>";
+							echo "<script>alert(\"Username or Email Already Exits \"); window.location.replace(\"register.php\"); </script>";
 
 							}   //check user existence ends
 			
 			}else	{
-				  echo "<script>alert(\"Password Not Match!!! \"); window.location.replace(\"../register.php\"); </script>";
+				  echo "<script>alert(\"Password Not Match!!! \"); window.location.replace(\"register.php\"); </script>";
 					}	//check password match ends
 
 
@@ -150,13 +151,11 @@ function googleTranslateElementInit() {
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from <?= $site_name; ?> .co/register by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 14 Dec 2020 10:09:51 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?= $site_name; ?>  | Register</title>
+    <title> <?= $site_name; ?>  | Register</title>
     <!--Favicon add-->
     <link rel="shortcut icon" type="image/png" href="assets/images/logo/icon.png">
     <!--bootstrap Css-->
@@ -185,9 +184,9 @@ function googleTranslateElementInit() {
     
     <script src="assets/front/2/js/modernizr.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="../cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
 
-    <script src="../cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
 </head>
 
 <body  data-spy="scroll">
@@ -291,40 +290,40 @@ function googleTranslateElementInit() {
                                 
                                 <div class="row">
                                     <div class="col-md-6">
-                                                                                    <input type="text" name="under_reference" id="under_reference" value="" placeholder="Referral Username"/>
-                                                                            </div>
+                                            <input type="text"  placeholder="Referral Username (optional)"   name="ref_email"  value="<?php if(isset($ref_email1)){echo $ref_email1;}?>"  />
+                                    </div>
                                     <div class="col-md-6">
-                                         <input type="text"  name="username" id="username" required placeholder="Enter your Username"/>
+                                         <input type="text"  name="name" id="username" required placeholder="Enter your Username *"/>
                                     </div>
                                 </div>  
                                 <hr>
                                 <br>
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <input type="text"  name="name" id="name" required placeholder="Enter your Name"/>           
+                                        <input type="text"  name="fullname" id="name" required placeholder="Enter your Name *"/>           
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="text"  name="email" id="email" required placeholder="Enter your Email"/>     
+                                        <input type="email"  name="email" id="email" required placeholder="Enter your Email *"/>     
                                     </div>
                                        <div class="col-md-6">
-                                    <input type="text"  name="phone" id="phone" required placeholder="Enter your Phone Number"/>
+                                    <input type="text"  name="user_phone" id="phone" required placeholder="Enter your Phone Number *"/>
                                 </div>
                                 </div>
                                 <hr>
                                 <br>
                               <div class="row">
                                     <div class="col-md-6">
-                                        <input type="password"  name="password" id="password" required placeholder="Enter your Password"/>
+                                        <input type="password"  name="password" id="password" required placeholder="Enter your Password *"/>
                                     </div>
 
                                     <div class="col-md-6">
-                                        <input type="password"  name="password_confirmation" id="password_confirmation" required placeholder="Confirm your Password"/>
+                                        <input type="password"  name="password_confirmation" id="password_confirmation" required placeholder="Confirm your Password *"/>
                                     </div>
                                </div>                              
                                 
                                                                  <div class="row">
                                      <div class="col-md-12">
-                                         <input value="Register" type="submit">
+                                         <input value="Register" name="reg_btn" type="submit">
                                      </div>
                                  </div>
                                     
@@ -333,7 +332,7 @@ function googleTranslateElementInit() {
                         </div>     
                                 <div class="text-center" style="text-transform: uppercase;">
                                     <br><br>
-                                      <a href="password/reset.php">Forgot Password</a> | <a href="login.php">Login</a>
+                                      <a href="#!">Forgot Password</a> | <a href="login.php">Login</a>
                                     <br><br>
                                 </div>
                         </div>
