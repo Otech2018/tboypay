@@ -92,7 +92,7 @@ mail($email,$welcome_email_subject,$welcome_email_body,$welcome_email_headers);
 																	
 															
 																		
-																			echo "<script>alert(\"Account Registered Successfully!!! Its Now Time TO LogIn\"); window.location.replace(\"login.html\"); </script>";
+																			echo "<script>alert(\"Account Registered Successfully!!! Its Now Time TO LogIn\"); window.location.replace(\"login.php\"); </script>";
 
 														}else{
 																echo "<script>alert(\"An Error Occurred Please Try Again \"); window.location.replace(\"register.php\"); </script>";

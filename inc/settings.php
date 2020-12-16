@@ -3,6 +3,9 @@
 session_start(); 
 
 
+$reg_Date = date('Y-m-d');
+$deposite_exp_date = date('Y-m-d',strtotime('14 days') );
+
 
 $site_name ="crystalgrand Investment";
 $site_link ="crystalgrandinvestment.com";
@@ -73,7 +76,7 @@ class connect{
 
 //site variables
 $reg_Date = date('Y-m-d');
-$deposite_exp_date = date('Y-m-d',strtotime('7 days') );
+$deposite_exp_date = date('Y-m-d',strtotime('14 Days') );
 
 
 // $site_lowest_amt = 5000;

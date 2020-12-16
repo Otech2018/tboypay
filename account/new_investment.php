@@ -5,7 +5,7 @@
 
 if( !loggedin() ){
 
-    echo "<script> window.location.replace(\"../login.html\"); </script>";
+    echo "<script> window.location.replace(\"../login.php\"); </script>";
   }
 
 ?>
@@ -16,11 +16,11 @@ if( !loggedin() ){
 
 <head>
 <meta charset="utf-8">
-<meta name="description" content="Kreto Investment is an investment company located at 12 Golden Square, Aberdeen, Aberdeenshire, AB10 1RB, United Kingdom . Our headquarters are located in Calle Diputada Laura Rodríguez, 142, RM, La Reina Riga, Chile. It was incorporated on the 17th of August, 2017, which aims to reach out to Everyone, offering a guarnteed return on every investment which cuts across all social classes so that no one is left behind. Kreto Investments is an investment platform where returns are gotten as early as Seven(7) days with a guaranteed return; People help People. We engage in real estate investment and development 30 years of experience in cunstruction services, crypto currency investment, architecture, manufacturing , structural engineering and Forex trading">
+<meta name="description" content="<?= $site_name; ?> is an investment company located at <?= $site_address; ?>. It was incorporated on the 17th of August, 2017, which aims to reach out to Everyone, offering a guarnteed return on every investment which cuts across all social classes so that no one is left behind. <?= $site_name; ?> is an investment platform where returns are gotten as early as 14 days with a guaranteed return; People help People. We engage in real estate investment and development 30 years of experience in cunstruction services, crypto currency investment, architecture, manufacturing , structural engineering and Forex trading">
 <meta name="keywords" content="consulting, accountant, advisor, audit, beaver builder, broker, business, clean, company, consulting, corporate, finance, financial, insurance, trader">
 <meta name="keywords" content="consulting, accountant, advisor, audit, beaver builder, broker, business, clean, company, consulting, corporate, finance, financial, insurance, trader">
-<meta name="author" content="Kreto Investments">
-<title>New Investment -- Kreto Investments</title>
+<meta name="author" content="<?= $site_name; ?>">
+<title>New Investment -- <?= $site_name; ?></title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
@@ -196,10 +196,13 @@ if( isset($_POST['invest_btn'])){
 <h4 class="mb-0">INVESTMENT PACKAGES</h4>
 <br><br>
 </div>
+
+ 
+
 <div class="col-md-6">
 <div class="card card-inverse card-danger">
 <div class="card-header">
-<h4 class="mb-0 text-dark text-center">Silver Plan</h4></div>
+<h4 class="mb-0 text-dark text-center">Starter Plan</h4></div>
 <div class="card-body">
 <div class="table-responsive">
 <table class="table">
@@ -221,11 +224,53 @@ if( isset($_POST['invest_btn'])){
 <label class="custom-control-label" for="customRadio5"></label>
 </div>
 </td>
-<td>4.5%</td>
-<td>$200.00</td>
-<td>$4,999.00</td>
+<td>100%</td>
+<td>$500.00</td>
+<td>$1,000.00</td>
 <td>Daily</td>
-<td><span class="label label-danger">7 Days</span> </td>
+<td><span class="label label-danger">14 Days</span> </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+<div class="col-md-6">
+<div class="card card-inverse card-danger">
+<div class="card-header">
+<h4 class="mb-0 text-dark text-center">Silver Plan</h4></div>
+<div class="card-body">
+<div class="table-responsive">
+<table class="table">
+<thead>
+<tr>
+ <th></th>
+<th>Roi</th>
+<th>Minimum Investment</th>
+<th>Maximum Investment</th>
+<th>Return Type</th>
+<th>Duration</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<div class="form-group">
+<input type="radio" name="package" required class="form-control-input" value="2">
+<label class="custom-control-label" for="customRadio5"></label>
+</div>
+</td>
+<td>120%</td>
+<td>$1001.00</td>
+<td>$2000.00</td>
+<td>Daily</td>
+<td><span class="label label-danger">14 Days</span> </td>
 </tr>
 </tbody>
 </table>
@@ -259,15 +304,15 @@ if( isset($_POST['invest_btn'])){
 <tr>
 <td>
 <div class="form-group">
-<input type="radio" name="package" required class="form-control-input" value="2">
+<input type="radio" name="package" required class="form-control-input" value="3">
 <label class="custom-control-label" for="customRadio5"></label>
 </div>
 </td>
-<td>5.8%</td>
+<td>170%</td>
+<td>$2,001.00</td>
 <td>$5,000.00</td>
-<td>$9,999.00</td>
 <td>Daily</td>
-<td><span class="label label-danger">7 Days</span> </td>
+<td><span class="label label-danger">14 Days</span> </td>
 </tr>
 </tbody>
  </table>
@@ -300,15 +345,15 @@ if( isset($_POST['invest_btn'])){
 <tr>
 <td>
 <div class="form-group">
-<input type="radio" name="package" required class="form-control-input" value="3">
+<input type="radio" name="package" required class="form-control-input" value="4">
 <label class="custom-control-label" for="customRadio5"></label>
 </div>
 </td>
-<td>7.5%</td>
-<td>$10,000.00</td>
-<td>Infinity</td>
+<td>200%</td>
+<td>$10,001.00</td>
+<td>$25,000.00</td>
 <td>Daily</td>
-<td><span class="label label-danger">7 Days</span> </td>
+<td><span class="label label-danger">14 Days</span> </td>
 </tr>
 </tbody>
 </table>
@@ -350,7 +395,7 @@ if( isset($_POST['invest_btn'])){
 
 
 <footer class="footer">
-© 2020 Kreto Investments </footer>
+© 2020 <?= $site_name; ?> </footer>
 
 
 

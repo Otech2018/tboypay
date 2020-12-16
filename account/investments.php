@@ -5,7 +5,7 @@
 
 if( !loggedin() ){
 
-    echo "<script> window.location.replace(\"../login.html\"); </script>";
+    echo "<script> window.location.replace(\"../login.php\"); </script>";
   }
 
 ?>
@@ -16,10 +16,10 @@ if( !loggedin() ){
 
 <head>
 <meta charset="utf-8">
-<meta name="description" content="Kreto Investment is an investment company located at 12 Golden Square, Aberdeen, Aberdeenshire, AB10 1RB, United Kingdom . Our headquarters are located in Calle Diputada Laura Rodríguez, 142, RM, La Reina Riga, Chile. It was incorporated on the 17th of August, 2017, which aims to reach out to Everyone, offering a guarnteed return on every investment which cuts across all social classes so that no one is left behind. Kreto Investments is an investment platform where returns are gotten as early as Seven(7) days with a guaranteed return; People help People. We engage in real estate investment and development 30 years of experience in cunstruction services, crypto currency investment, architecture, manufacturing , structural engineering and Forex trading">
+<meta name="description" content="<?= $site_name; ?> is an investment company located at <?= $site_address; ?>. It was incorporated on the 17th of August, 2017, which aims to reach out to Everyone, offering a guarnteed return on every investment which cuts across all social classes so that no one is left behind. <?= $site_name; ?> is an investment platform where returns are gotten as early as 14 days with a guaranteed return; People help People. We engage in real estate investment and development 30 years of experience in cunstruction services, crypto currency investment, architecture, manufacturing , structural engineering and Forex trading">
 <meta name="keywords" content="consulting, accountant, advisor, audit, beaver builder, broker, business, clean, company, consulting, corporate, finance, financial, insurance, trader">
-<meta name="author" content="Kreto Investments">
-<title>Investment History -- Kreto Investments</title>
+<meta name="author" content="<?= $site_name; ?>">
+<title>Investment History -- <?= $site_name; ?></title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
@@ -230,7 +230,7 @@ include('../frm/header.php');
 
 
 <footer class="footer">
-© 2020 Kreto Investments </footer>
+© 2020 <?= $site_name; ?> </footer>
 
 
 
