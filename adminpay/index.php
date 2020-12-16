@@ -1,6 +1,6 @@
 <?php
 
- include('../frm/set.php');
+  include('../inc/settings.php'); 
 $active= "login";
 
 
@@ -98,7 +98,7 @@ require "script/mlc/script_head.php";
 		 <div class="card z-depth-4 -text">
             <div class="card-content">
               <h2 align="center" style="color:#ff5722;">
-			  <img class="animated pulse " src="../assets/home/images/tivo.png"  alt=" icon" width="150px"  />
+			  <img class="animated pulse " src="../assets/images/logo/logo.png"  alt=" icon" width="150px"  />
 			  <br/><b>	ADMIN LOG IN </b></h2>
             <div class="row" style="margin:-5px;">
         <div class="input-field col s12">

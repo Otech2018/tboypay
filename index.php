@@ -206,19 +206,19 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
                                        
                                        
                                         <div class = "planbox">
-                        <div class = "planhead"> COINS STAR </div>
+                        <div class = "planhead"> STARTER </div>
                         <div class = "planpercentage">
                             <div class = "top">
-                                20 <span>% </span>
+                                100 <span>% </span>
                             </div>
                             <div class = "bottom">
-                              Duration: 24 Hours </div>
+                              Duration: 14 DAYS</div>
                         </div>
                         <div class="planinfos">
                             <ul>
                           <li> Capital: <span> Return </span> </li>
-                                <li> Minimum: <span> 100 $ </span> </li>
-                                <li> Maximum: <span> $ 999 </span> </li>
+                                <li> Minimum: <span> $ 500  </span> </li>
+                                <li> Maximum: <span> $ 1000 </span> </li>
                             </ul>
                         </div>
                         <div class = "planaction">
@@ -232,19 +232,19 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
                                        
                                        
                     <div class = "planbox">
-                        <div class = "planhead"> COINS ENTERPRISE </div>
+                        <div class = "planhead"> SILVER </div>
                         <div class = "planpercentage">
                             <div class = "top">
-                                50 <span>% </span>
+                                120 <span>% </span>
                             </div>
                             <div class = "bottom">
-                                Duration: 7 Days </div>
+                                Duration: 14 Days </div>
                         </div>
                         <div class="planinfos">
                             <ul>
                                <li> Capital: <span> Return </span> </li>
-                                <li> Minimum: <span> $ 1,000 </span> </li>
-                                <li> Maximum: <span> $ 49,999 </span> </li>
+                                <li> Minimum: <span> $ 1,001 </span> </li>
+                                <li> Maximum: <span> $ 2,000 </span> </li>
                             </ul>
                         </div>
                         <div class = "planaction">
@@ -256,45 +256,45 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
                     
                                  
                                         <div class = "planbox">
-                        <div class = "planhead"> COINS ENTERPRISE </div>
+                        <div class = "planhead"> GOLD </div>
                         <div class = "planpercentage">
                             <div class = "top">
-                                50 <span>% </span>
+                                170 <span>% </span>
                             </div>
                             <div class = "bottom">
-                                Duration: 7 Days </div>
+                                Duration: 14 Days </div>
                         </div>
                         <div class="planinfos">
                             <ul>
                                <li> Capital: <span> Return </span> </li>
-                                <li> Minimum: <span> $ 1,000 </span> </li>
-                                <li> Maximum: <span> $ 49,999 </span> </li>
+                                <li> Minimum: <span> $ 2,001 </span> </li>
+                                <li> Maximum: <span> $ 5,000 </span> </li>
                             </ul>
                         </div>
                         <div class = "planaction">
                           
                             <a href="login.php"> Invest </a>
                                                       </div>
-                        <div class = "plancurve two"> &nbsp; </div>
+                        <div class = "plancurve one"> &nbsp; </div>
                     </div>
                                       
                                       
                                       
                                       
-                                        <div class = "planbox">
-                        <div class = "planhead"> COINS VIP </div>
+                                        <div class = "planbox" style="margin-top: 100px;">
+                        <div class = "planhead"> PREMIUM </div>
                         <div class = "planpercentage">
                             <div class = "top">
-                                100<span>% </span>
+                                200<span>% </span>
                             </div>
                             <div class = "bottom">
-                                Duration: 30 Days </div>
+                                Duration: 14 Days </div>
                         </div>
                         <div class = "planinfos">
                             <ul>
                                 <li> Capital: <span> Return </span> </li>
-                                <li> Minimum: <span> $ 50,000 </span> </li>
-                                <li> Maximum: <span> $ Unlimited </span> </li>
+                                <li> Minimum: <span> $ 10,001 </span> </li>
+                                <li> Maximum: <span> $ 25,000 </span> </li>
                             </ul>
                         </div>
                         <div class="planaction">
@@ -302,116 +302,23 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
                                                       </div>
                         <div class="plancurve three">&nbsp;</div>
                     </div>
+
+
+
+                    <div class = "planbox" style="margin-top: 100px;">
+                        <iframe width="490" height="310" src="https://www.youtube.com/embed/Um63OQz3bjo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                       
+                    </div>
                                     </div>
             </div>
         </div>
     </div>
-    <style>
-        .icon.currency::before {
-            background: #0668b2;
-            border-radius: 50%;
-            content: '$';
-            display: block;
-            font-size: 20px;
-            margin-top: 11px;
-            margin-right: auto;
-            margin-left: auto;
-            line-height: 1.6;
-            height: 32px;
-            width: 32px;
-        }
-    </style>
-    <div class="graphcs2">
-        <div class="calculatorwrap">
-            <div class="content">
-                <!-- <div class="calculatorbox fadeInDown wow">
-                    <div class="left">
-                        <h4>Profit calculator</h4>
-                    </div>
-                    <div class="right">
-                        <div class="enteramount">
-                            <label>Plan:</label>
-                            <div class="putfigure">
-                                <select name="plan" id="plane" style="height: 54px;padding: 0 65px 0 15px;">
-                                                                            <option value = "1"> 20% IN 1 DAY </option>
-                                                                            <option value = "2"> 50% FOR 7 DAYS </option>
-                                                                            <option value = "3"> 100% FOR 30 DAYS </option>
-                                                                    </select>
-                            </div>
-                        </div>
-                        <div class = "enteramount">
-                            <label> Deposit amount: </label>
-                            <div class = "putfigure">
-                                <input class = "deposit" type = text value = "1" id = "amount" name = "amount" />
-                                <span class = "icon currency">
-                                </span>
-                            </div>
-                        </div>
-                        <div class = "calculatorresults">
-                            <span class = "icons">
-                                <img src = "theme/%20demo67/%20assets/%20common/%20images/%20calculatortick.php" alt = "" />
-                            </span>
-                            <p> Profit: </p>
-                            <h4 id="totals"></h4>
-                        </div>
-                    </div> -->
-                </div>
-            </div>
-        </div>
-    <script>
-      const plans = JSON.parse('[{"id":"1","description":"20% \u0437\u0430 24 \u0447\u0430\u0441\u0430","percent":"120.000","count":"1","seconds":"86400","img":"","min":"100.00000000","max":"999.00000000","return":"0","start_data":"0","end_data":"0","status":"1","delete":"1"},{"id":"2","description":"50% \u0437\u0430 24 \u0447\u0430\u0441\u0430","percent":"150.000","count":"1","seconds":"86400","img":"","min":"1000.0000000","max":"49999.00000000","return":"0","start_data":"0","end_data":"0","status":"1","delete":"1"},{"id":"3","description":"100% \u0437\u0430 48 \u0447\u0430\u0441\u043e\u0432","percent":"200.000","count":"1","seconds":"172800","img":"","min":"50000.00000000","max":"10000000000.00000000","return":"0","start_data":"0","end_data":"0","status":"1","delete":"1"}]');
-
-      function calc(amount) {
-        let plan_id = Number($('#plane').val());
-        let percent = 0;
-        let count = 0;
-        let seconds = 0;
-        let plan_return = 0;
-        let date = new Date();
-        let check = false;
-        if (plans) {
-          plans.forEach(function (plan) {
-            if (amount >= Number(plan['min']) && amount <= Number(plan['max']) && plan_id === Number(plan['id'])) {
-              count = Number(plan['count']);
-              percent = Number(plan['percent']);
-              seconds = Number(plan['seconds']);
-              plan_return = Number(plan['return']);
-              date.setSeconds(date.getSeconds() + seconds * (count === 0 ? 1 : count));
-              check = true;
-            }
-          });
-        }
-        if (check) {
-          const total = (amount / 100 * percent) * (count === 0 ? 1 : count) + Number(plan_return === 1 ? amount : 0);
-          $('#totals').php(total.toFixed(2) + ' USD');
-            
-        } else {
-          $('#totals').php('----');
-        }
-      }
-
-      $("#amount").on("change keyup", function () {
-        calc($(this).val());
-      });
-      $("#plane").on("change keyup", function () {
-        change_amount($(this).val());
-        calc($("#amount").val());
-      });
-      $(document).ready(function () {
-        calc($("#amount").val());
-      });
-      function change_amount(plan_id) {
-        let row = plans.filter((item) => Number(item.id) === Number(plan_id))[0];
-        let min = Number(row.min);
-        let max = Number(row.max);
-        $('#amount').val(min);
-      }
-    </script>
-      </div>
+   
+   
       
                     <div class="chooserleft">
                     <div class="videobox zoomIn animated wow" data-wow-duration="2s">
-                     <iframe width="490" height="310" src="https://www.youtube.com/embed/Um63OQz3bjo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                     <iframe width="490" height="310"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     
                     
@@ -473,7 +380,9 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
                       
                 
                 
-                              <a target="_blank" href="https://t.me/<?= $site_name; ?> "><i class="fa fa-telegram" style="font-size:48px;color:blue"></i>
+                              <a target="_blank" href="#!"><i class="fa fa-telegram" style="font-size:48px;color:blue"></i>
+                              <a target="_blank" href="#!"><i class="fa fa-whatsapp" style="font-size:48px;color:blue"></i>
+                              <a target="_blank" href="#!"><i class="fa fa-facebook" style="font-size:48px;color:blue"></i>
                                    
                                    
                                    
