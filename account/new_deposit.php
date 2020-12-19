@@ -106,8 +106,10 @@ include('../frm/header.php');
 <div class="form-group">
 <label class="control-label">Select Coin to Fund</label>
 <select class="form-control form-control-lg" name="coin_fund">
-<option value="ETH">ETH</option>
-<option value="BTC">BTC</option>
+<option value="ETH">ETHEREUM</option>
+<option value="BTC">BITCOIN</option>
+<!-- <option value="LTE">LITECOIN</option>
+<option value="XRP">RIPPLE</option> -->
 </select>
 </div>
 </div>

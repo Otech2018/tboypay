@@ -50,11 +50,11 @@ if( isset($_POST['dep_btn_m']) ){
                         $tran_id = "INV-".date('hismY');
                        if( $coin_fund == 'BTC'){
                             $coin_amt = number_format( usd_btc($fund_amt),4);
-                            $wal_add = "1KbAVJQGA57oa6ar2oJftPbqgeQbBEfwyE" ;
+                            $wal_add = "1A8x6CtDwzqXfXob3d5Tc46DbVFJGY1G3f" ;
 
                         }else{
                              $coin_amt = number_format( usd_eth($fund_amt),4);
-                              $wal_add = "0x822a351c8ef2aecb811ae6f78d59f6ff627b1506" ;
+                              $wal_add = "0x2e02DD9b7Ceda9581c0f8883028DA4ac1f3a6e30" ;
                         }
 
 
@@ -170,8 +170,6 @@ if( isset($_POST['check']) ){
 
 
 
-
-
 <div class="row">
 <div class="col-md-12">
 <div class="card card-body text-dark printableArea">
@@ -179,7 +177,7 @@ if( isset($_POST['check']) ){
 <div class="col-md-12 pa-3">
 <div class="pull-left">
 <h3 class="text-center">
-<img src="../assets/home/images/tivo.png" alt="" title="" style="width:100px;">
+<img src="../assets/images/logo/logo.png" alt="" title="" style="width:100px;">
 </h3>
 </div>
 <div class="pull-right text-right">
@@ -200,7 +198,7 @@ Invoice: <b><?php echo $tran_id; ?></b>
 <address>
 <div class="text-uppercase font-16 font-bold mb-10">Payable To:</div>
 <div class="font-medium m-b-10"><?= $site_name; ?></div>
-<p class="mb-10">Aberdeen</p>
+<p class="mb-10"></p>
 <p class="mb-10"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="472e29212807332e31282e29312234332a2229336924282a">[email&#160;protected]</a></p>
 </address>
 </div>
@@ -231,7 +229,7 @@ Invoice: <b><?php echo $tran_id; ?></b>
 <td><b><?php echo $coin_amt.' '.$coin_fund; ?></b></td>
 <td><?php echo $tran_pop; ?></td>
 <td><?php echo $wal_add; ?></td>
-<td><img src="https://www.coinpayments.net/qrgen.php?id=CPEK4VIJLOS0FOAKHC3WKFHHTY&amp;key=41394f9cde4331ba15f08f3d05ba8ac3" style="width:100px;"></td>
+<td><img src="../assets/js/sc.png" style="width:100px;"></td>
 </tr>
 <tr>
 <td class="invoice-bottom-top" rowspan="4" colspan="4">Note:<br>

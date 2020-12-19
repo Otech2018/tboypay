@@ -112,12 +112,72 @@ $value = $quantity / $result;
 
 
 
-              
+
+function xrp_usd($amt){
+	
+	$getrate = "https://min-api.cryptocompare.com/data/price?fsym=XRP&tsyms=BTC,USD,EUR";
+
+$price = file_get_contents($getrate);
+$result = json_decode($price, true);
+
+$xrp = $amt * $result['USD'];
+
+return $xrp;
+
+}
+
+
+
+function usd_xrp($amt){
+	
+	$getrate = "https://min-api.cryptocompare.com/data/price?fsym=USD&tsyms=BTC,XRP,EUR";
+
+$price = file_get_contents($getrate);
+$result = json_decode($price, true);
+
+$usd = $amt * $result['XRP'];
+
+return $usd;
+
+}
+
+
+
+
+function ltc_usd($amt){
+	
+	$getrate = "https://min-api.cryptocompare.com/data/price?fsym=LTC&tsyms=BTC,USD,EUR";
+
+$price = file_get_contents($getrate);
+$result = json_decode($price, true);
+
+$ltc = $amt * $result['USD'];
+
+return $ltc;
+
+}
+
+
+
+function usd_ltc($amt){
+	
+	$getrate = "https://min-api.cryptocompare.com/data/price?fsym=USD&tsyms=BTC,LTC,EUR";
+
+$price = file_get_contents($getrate);
+$result = json_decode($price, true);
+
+$usd = $amt * $result['LTC'];
+
+return $usd;
+
+}
+
+
 
 ?>
 
 <link rel="shortcut icon" href="../assets/home/images/tivo.png" type="image/x-icon">
-<link rel="icon" href="../assets/home/images/tivo.png" type="image/x-icon">
+<link rel="icon" href="../assets/images/logo/logo.png" type="image/x-icon">
 
 <link href="../assets/dashboard/assets/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 

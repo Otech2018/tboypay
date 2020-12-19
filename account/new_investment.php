@@ -8,6 +8,8 @@ if( !loggedin() ){
     echo "<script> window.location.replace(\"../login.php\"); </script>";
   }
 
+
+
 ?>
 
 <!DOCTYPE html>
@@ -36,25 +38,32 @@ if( isset($_POST['invest_btn'])){
     
 
     if( $package=='1'){
-        $min_amt = 200;
-        $max_amt =4999;
-        $roi = ($fund_amt  * 0.315 ) + $fund_amt; 
-		$package ="SILVER";
-		$coin ="4.5%";
+        $min_amt = 500;
+        $max_amt =1000;
+        $roi = ($fund_amt  * 1) + $fund_amt; 
+		$package ="STARTER";
+		$coin ="7.1%";
 
     }else if( $package=='2'){
-        $min_amt = 5000;
-        $max_amt =9999;
-        $roi = ($fund_amt  * 0.406 ) + $fund_amt; 
+        $min_amt = 1001;
+        $max_amt =2000;
+        $roi = ($fund_amt  * 1.2 ) + $fund_amt; 
+        $package ="SILVER";
+		$coin ="8.6%";
+        
+    }else if( $package=='3'){
+        $min_amt = 2001;
+        $max_amt =5000;
+        $roi = ($fund_amt  * 1.7 ) + $fund_amt; 
         $package ="GOLD";
-		$coin ="5.8%";
+        $coin ="12.1%";
         
     }else{
-        $min_amt = 10000;
-        $max_amt =9999999999999999999999999999;
-        $roi = ($fund_amt  * 0.525 ) + $fund_amt; 
+        $min_amt = 10001;
+        $max_amt =25000;
+        $roi = ($fund_amt  * 2 ) + $fund_amt; 
         $package ="PLATINUM";
-		$coin ="7.5%";
+		$coin ="14.23%";
         
     }
     
@@ -64,8 +73,7 @@ if( isset($_POST['invest_btn'])){
     if( is_numeric($fund_amt) ){
 
         if( $fund_amt < $min_amt ||  $fund_amt > $max_amt  ){
-            echo "<script>alert(\"Invalid Amount, Please Make Sure the 
-            Amount Entered is Inline With the Package You Choose!!!\"); 
+            echo "<script>alert(\"Invalid Amount, Please Make Sure the Amount Entered is Inline With the Package You Choose!!!\"); 
             window.location.replace(\"../account/new_investment.php\"); </script>";
 
         }else{
@@ -142,7 +150,7 @@ if( isset($_POST['invest_btn'])){
         
 
             }else{
-                echo "<script>alert(\"Insuficient Amount, You do not have enough money for this Investment!!!\"); window.location.replace(\"../account/new_investment.php\"); </script>";
+                echo "<script>alert(\"Insuficient Amount, You do not have enough money for this Investment!!! \"); window.location.replace(\"../account/new_investment.php\"); </script>";
 
             }
                                                  

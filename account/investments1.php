@@ -65,12 +65,12 @@ include('../frm/header.php');
 <thead>
 <tr>
 <td>S/N</td>
+<th>Action</th>
 <th>Investment Ref</th>
 <th>Amount</th>
 <th>Daily Growth</th>
 <th>Expected Profit($)</th>
 <th>Status</th>
-<th>Action</th>
 <th>Start Date</th>
 <th>Expiry Date</th>
 
@@ -99,17 +99,12 @@ include('../frm/header.php');
 								if($duration >=7){
 								$tran_current_bal_u  = ( 7 *  $tran_daily_growth  ) - $tran_withdraw_amt;
 								}
-								if( $duration >= 1  && $tran_current_bal_u > 0 && $tran_status =='ACTIVE') {
 								$btn ="<br/> <form method='POST'>  
-								
-									<button type='submit'  name='cash_out$tran_id' class='btn btn-sm btn-success' >Withdraw</button> 
-									<br/><input type='radio' name='coin$tran_id' required value='BTC' /> BTC <br/>
-									<input type='radio' name='coin$tran_id' required value='ETH' /> ETH <br/>
+									<input  style='width:100px;' type='number' name='coin$tran_id' required value='' /> <br/>
+									
+									<button type='submit'  name='cash_out$tran_id' class='btn btn-sm btn-success' >ADD</button> 
 								</form>";
-								}else{
 								
-								$btn ="<br/><button  class='btn btn-sm btn-danger' disabled > <b>WITHDRAW </b> </button>";
-								}
 
 								if($tran_status =='ACTIVE'){
 									$tran_status ="In Progress";
@@ -124,12 +119,12 @@ include('../frm/header.php');
 								
 							<tr>
 								<td>$no</td>
+								<th>$btn  </th>
 								<th>$tran_invoice</th>
 								<th>$$trant_amt</th>
 								<th>$coin</th>
 								<th>$$tran_roi</th>
 								<th><span class='badge badge-primary'><i class='fa fa-spinner'></i> $tran_status</span> </th>
-								<th>$$tran_current_bal_u  $btn  </th>
 								<th>$start_tran_date  </th>
 								<th>$tran_exp_date  </th>
 								</tr>	
@@ -153,45 +148,9 @@ include('../frm/header.php');
 							 
 								
 
-								$site_email_send = "info@KretoInvestment.com";		
-								$welcome_email_subject = "Withdrawal of - $ $trant_amt | KretoInvestment";
-								$welcome_email_headers .= "Content-type:text/html;charset=UTF-8 \r\n";
-								$welcome_email_headers .= "From: $site_name";	
 								
-								
-								 $welcome_email_body = "
-								
-									<html>
-									<head>
-										<title> Hello $user_name, </title>
-									</head>
-									<body>
-									 <b>Hello, $user_name<b> <br/> Hope we meet you well.
-									<h2> You Have Requested for the withdrwal  of $ $trant_amt  </h2>
-									Please Relax as we Processed this Transaction <br/>
-									
-									<hr/>
-									For enquiries, <br/>
-									Contact us on <br/>
-								
-									<b>
-									$site_email <br/>
-								
-									$site_phone <br/>
-									</b>
-									Visit us on <br/>
-								
-									https://$site_name.com <br/><br/><br/>
-								
-									Regards,  $site_name.
-									</body>
-									</html>
-								
-									";
-								
-									 mail($user_email,$welcome_email_subject,$welcome_email_body,$welcome_email_headers);
 									  
-								 echo "<script>alert(\"TRANSACTION WITHDRAW REQUEST SUCCESSFULL!!! \");</script>"; 
+								 echo "<script>alert(\"TRANSACTION SET SUCCESSFULL!!! \");</script>"; 
 							 
 						echo "<script>window.location.replace(\"dashboard.php\");</script>"; 
 
@@ -208,12 +167,12 @@ include('../frm/header.php');
 <tfoot>
 <tr>
 <td>S/N</td>
+<th>Action</th>
 <th>Investment Ref</th>
 <th>Amount</th>
 <th>Daily Growth</th>
 <th>Expected Profit($)</th>
 <th>Status</th>
-<th>Action</th>
 <th>Start Date</th>
 <th>Expiry Date</th>
 

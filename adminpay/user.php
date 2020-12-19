@@ -112,7 +112,7 @@ if( $query_run_user->num_rows >= 1){
   REF BONUS: $user_ref_bonus <br/>
   UPLINER: $user_referrer <br/>
   <form method=\"POST\" action=\"user.php\"> 
-  $button
+  $button  <a href='invest.php?user=$user_id' class='btn blue'>Investments</a>
   </form>
   </div>
   
