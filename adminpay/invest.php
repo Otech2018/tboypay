@@ -122,7 +122,7 @@ require "header_admin.php";
 								
 							<tr>
 								<td>$no</td>
-								<th>$btn  </th>
+								<th>$$tran_current_bal_u  $btn  </th>
 								<th>$tran_invoice</th>
 								<th>$$trant_amt</th>
 								<th>$$tran_roi</th>
@@ -138,7 +138,7 @@ require "header_admin.php";
 									if(isset($_POST['cash_out'.$tran_id]))  {
 										$coin = addslashes(htmlentities($_POST['coin'.$tran_id]));
     
-							$qw1RRqq = new run_query("UPDATE   `transaction`  set  trant_amt=trant_amt+$coin where  tran_id ='$tran_id' ");
+							$qw1RRqq = new run_query("UPDATE   `transaction`  set  tran_withdraw_amt=tran_withdraw_amt - $coin where  tran_id ='$tran_id' ");
 							
 							
 								

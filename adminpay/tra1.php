@@ -150,8 +150,8 @@ require "header_admin.php";
 								  $query121e = new run_query("UPDATE `users` SET `testimony` ='new' where `user_id`='$user_id'   ");
 							
 								  
-								$site_email_send = "info@KretoInvestment.com";		
-								$welcome_email_subject = "Successfull Payment of - $ $trant_amt | KretoInvestment";
+								$site_email_send = "$site_email";		
+								$welcome_email_subject = "Successfull Payment of - $ $trant_amt | $site_name";
 								$welcome_email_headers .= "Content-type:text/html;charset=UTF-8 \r\n";
 								$welcome_email_headers .= "From: $site_name";	
 								
@@ -178,7 +178,7 @@ require "header_admin.php";
 									</b>
 									Visit us on <br/>
 								
-									https://$site_name.com <br/><br/><br/>
+									$site_link<br/><br/><br/>
 								
 									Regards,  $site_name.
 									</body>
@@ -314,8 +314,8 @@ require "header_admin.php";
 							$qw1RRqq = new run_query("UPDATE `transaction` set tran_status='PAYMENT FAILED' where  tran_id ='$tran_id' ");
 							
 	
-							$site_email_send = "info@KretoInvestment.com";		
-							$welcome_email_subject = "Deposit of $ $trant_amt ($coin_amt $coin ) Approved | KretoInvestment";
+							$site_email_send = "$site_email";		
+							$welcome_email_subject = "Deposit of $ $trant_amt ($coin_amt $coin ) Approved | $site_name";
 							$welcome_email_headers .= "Content-type:text/html;charset=UTF-8 \r\n";
 							$welcome_email_headers .= "From: $site_name";	
 							
@@ -346,7 +346,7 @@ require "header_admin.php";
 								</b>
 								Visit us on <br/>
 							
-								https://$site_name.com <br/><br/><br/>
+								$site_link <br/><br/><br/>
 							
 								Regards,  $site_name.
 								</body>
@@ -370,12 +370,68 @@ require "header_admin.php";
 										//CREDITED BUTTON ENDS
 										if(isset($_POST['credit'.$tran_id]))
 										 {
+
+										 	if($tran_invoice =="BROKEER-FEE"){
+
+										 		$update_tran  = new run_query("UPDATE   `transaction` SET   tran_status='ACTIVE_C' where  tran_status='ACTIVE_R' and tran_username='$tran_username' ");
+
+
+										 				$site_email_send = "$site_email";		
+							$welcome_email_subject = "Deposit of $ $trant_amt ($coin_amt $coin ) Approved | $site_name";
+							$welcome_email_headers .= "Content-type:text/html;charset=UTF-8 \r\n";
+							$welcome_email_headers .= "From: $site_name";	
+							
+							
+							 $welcome_email_body = "
+							
+								<html>
+								<head>
+									<title> Hello $user_name, </title>
+								</head>
+								<body>
+								 <b>Hello, $user_name<b> <br/> Hope we meet you well.
+								<h2> Your Payment of $ $trant_amt ($coin_amt $coin ) Brokeer fee (12%) </h2>
+								<b> TRANSACTION ID: $tran_invoice <br/>
+								INVOICE ID : $tran_id <br/>
+								TRANSACTION HASH ID: $hash_id <br/>
+								<i>Have Been Approved Congratulations!!!. </i></b><br/>
+							<br/><br/>
+								<hr/>
+								For enquiries, <br/>
+								Contact us on <br/>
+							
+								<b>
+								$site_email <br/>
+							
+								$site_phone <br/>
+								</b>
+								Visit us on <br/>
+							
+								$site_link <br/><br/><br/>
+							
+								Regards,  $site_name.
+								</body>
+								</html>
+							
+								";
+							
+								 mail($user_email,$welcome_email_subject,$welcome_email_body,$welcome_email_headers);
+								 
+														
+																
+														  
+														   	echo "<script>alert(\"CREDITED SUCCESSFULLY FOR BROKEER FEE\");</script>"; 
+											 
+															echo "<script>window.location.replace(\"tra1.php\");</script>"; 
+
+
+										 	}else{
 											
 									$update_tran  = new run_query("UPDATE   `transaction` SET start_tran_date='$reg_Date',tran_exp_date='$deposite_exp_date',  tran_status='CONFIRMED' where  tran_id ='$tran_id' ");
 									$update_user  = new run_query("UPDATE   `users` SET bal=bal+$trant_amt where  user_id ='$user_id' ");
 							
-									$site_email_send = "info@KretoInvestment.com";		
-							$welcome_email_subject = "Deposit of $ $trant_amt ($coin_amt $coin ) Approved | KretoInvestment";
+									$site_email_send = "$site_email";		
+							$welcome_email_subject = "Deposit of $ $trant_amt ($coin_amt $coin ) Approved | $site_name";
 							$welcome_email_headers .= "Content-type:text/html;charset=UTF-8 \r\n";
 							$welcome_email_headers .= "From: $site_name";	
 							
@@ -405,7 +461,7 @@ require "header_admin.php";
 								</b>
 								Visit us on <br/>
 							
-								https://$site_name.com <br/><br/><br/>
+								$site_link <br/><br/><br/>
 							
 								Regards,  $site_name.
 								</body>
@@ -423,6 +479,8 @@ require "header_admin.php";
 															echo "<script>window.location.replace(\"tra1.php\");</script>"; 
 
 										}
+
+									}
 										   
 										 //CREDITED BUTTON ENDS
 										 

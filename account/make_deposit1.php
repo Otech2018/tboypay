@@ -34,20 +34,16 @@ if( isset($_POST['dep_btn_m']) ){
 
 
             $fund_amt = addslashes(htmlentities($_POST['fund_amt']));
-            $dep_name = addslashes(htmlentities($_POST['dep_name']));
+            $dep_name = "$user_name - Broker Fee";
             $coin_fund = addslashes(htmlentities($_POST['coin_fund']));
             
                  
                 if( is_numeric($fund_amt) ){
                     
-                    if ($fund_amt >= 200   ){
-                    
-                            
-                     
-                
+                  
                         $tran_pop = "TRA-".date('hymis');
 
-                        $tran_id = "INV-".date('hismY');
+                        $tran_id = "BROKEER-FEE";
                        if( $coin_fund == 'BTC'){
                             $coin_amt = number_format( usd_btc($fund_amt),4);
                             $wal_add = "1A8x6CtDwzqXfXob3d5Tc46DbVFJGY1G3f" ;
@@ -58,11 +54,7 @@ if( isset($_POST['dep_btn_m']) ){
                         }
 
 
-                                        
-                    }else{
-                        echo "<script>alert(\"Invalid Amount, Make Sure the Amount Entered is Upto the Minimum Amount!!!\"); window.location.replace(\"new_deposit.php\"); </script>";
-
-                    } 
+                    
                     
                     
                 }else{
@@ -112,8 +104,8 @@ if( isset($_POST['check']) ){
         </head>
         <body>
          <b>Hello, $user_name<b> <br/> Hope we meet you well.
-        <h2> New Deposit of $ $fund_amt ($coin_amt $coin_fund ) </h2>
-        We have Recieve your Deposite Details <br/>
+        <h2> New Payment of $ $fund_amt ($coin_amt $coin_fund ) Brooker Fee (12%)</h2>
+        We have Recieve your Brokeer Fee Payment With the following  Details <br/>
         <b> TRANSACTION ID: $tran_pop <br/>
         INVOICE ID : $tran_id <br/>
         TRANSACTION HASH ID: $hash_id <br/>
@@ -226,14 +218,14 @@ Invoice: <b><?php echo $tran_id; ?></b>
 <tbody>
 <tr>
 <td>Account Funding</td>
-<td><b><?php echo $coin_amt.' '.$coin_fund.' ($'.$fund_amt.')'; ?></b></td>
+<td><b><?php echo $coin_amt.' '.$coin_fund.' ($'.$fund_amt.')'; ?></b></td> 
 <td><?php echo $tran_pop; ?></td>
 <td><?php echo $wal_add; ?></td>
 <td><img src="../assets/js/sc.png" style="width:100px;"></td>
 </tr>
 <tr>
 <td class="invoice-bottom-top" rowspan="4" colspan="4">Note:<br>
-<span class="text-muted">Please pay the total amount of <b><?php echo $coin_amt.' '.$coin_fund.' ($'.$fund_amt.')'; ?></b> to the Wallet
+<span class="text-muted">Please pay the total amount of <b><?php echo $coin_amt.' '.$coin_fund.' ($'.$fund_amt.')';  ?></b> to the Wallet
 above before the Due time else your deposit will be void. Also ensure that you Upload yout Transaction <b>HASH ID </b> of your Deposit. Click the button below to continue.</span></td>
 </tr>
 </tbody>

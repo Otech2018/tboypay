@@ -80,7 +80,7 @@ $site_phone <br/>
 </b>
 Visit us on <br/>
 
-https://$site_name.com <br/><br/><br/>
+$site_link <br/><br/><br/>
 
 Regards,  $site_name.
 </body>
